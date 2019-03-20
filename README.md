@@ -1,1 +1,1 @@
-# Dzianis_Klintukhou_training
+# Epam Front end training tasks.
