@@ -1,0 +1,61 @@
+.page-main {
+  padding: 5px;
+}
+
+.main-section,
+.main-aside {
+  height: 100%;
+  background: rgb(73, 68, 68);
+  border-radius: 5px;
+  opacity: .8;
+}
+
+.main-section {  
+  width: 50%;
+}
+
+.main-aside {
+  width: 24%;
+}
+
+.page-caption__figcaption,
+.main-section__link,
+.main-section__text,
+.main-aside__text,
+.page-footer__text,
+.page-caption {
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  text-decoration: none;
+  max-height: 15rem;
+  padding: 5px;
+}
+
+.main-aside__text {
+  font-style: italic;
+}
+
+.page-caption {
+  max-height: 5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.main-section__img {
+  display: block;
+  padding: 15px;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+.main-section__img:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+.main-section__link:hover {
+  color: aqua;
+  transition: all .3s;
+}

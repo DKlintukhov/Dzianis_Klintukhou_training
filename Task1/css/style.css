@@ -1,0 +1,14 @@
+@import './normalize.css';
+@import './fonts.css';
+@import './mixins.css';
+
+@import './components/header.css';
+@import './components/main.css';
+@import './components/footer.css';
+
+.page {
+  font-family: 'Roboto';
+  background: url('../assets/imgs/pattern.png') repeat center;
+  min-width: 800px;
+}
+

@@ -1,0 +1,26 @@
+.page-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(73, 68, 68);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 1 0 0 0 (255, 4, 4, .3)
+}
+
+.menu {
+  height: 100%;
+  align-items: center;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 0 5px;
+}
+
+.menu__link:hover {
+  color: cyan;
+  transition: all ease-in-out .3s;
+  transform: scale(1.1);
+}

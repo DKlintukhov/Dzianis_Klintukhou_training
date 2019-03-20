@@ -1,0 +1,46 @@
+.page-footer {
+  width: 100%;
+  background-color: rgb(73, 68, 68);
+  height: 170px;
+}
+
+.page-footer__section {
+  align-content: center;
+}
+
+.page-footer__caption {
+  text-align: center;
+}
+
+.page-footer__link {
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.page-footer__text {
+  max-height: 2rem;
+  padding: 5px;
+}
+
+.page-footer__link:hover {
+  color: aqua;
+  transition: all .3s;
+}
+
+.button-up__link {
+  display: inline-block;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.button-up__link:hover {
+  transform: scale(1.1);
+}
