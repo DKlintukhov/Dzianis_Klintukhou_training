@@ -1,0 +1,21 @@
+.page-form__fieldset {
+  padding: 5px 0 5px 5px;
+  border: none;
+}
+
+.page-form__legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.page-form__legend--background {
+  font-family: cursive;
+  font-size: .8rem;
+  font-weight: 700;
+  background: #ededed;
+  padding: 0 10px;
+}
+
+.page-form__text {
+  font-size: .9rem;
+}

@@ -1,0 +1,106 @@
+.page-buttons-top {
+  height: 150px;
+  background-color: #fff;
+}
+
+.page-buttons-bottom {
+  height: 150px;
+  background-color: #333;
+}
+
+.page-buttons-top,
+.page-buttons-bottom {
+  max-width: 98%;
+  margin: 5px auto;
+  border: 1px solid #f5f4f2;
+  margin: 5px auto;
+}
+
+.page-buttons__wrapper {
+  width: 240px;
+  height: 90%;
+  padding: 20px;
+}
+
+
+.btn {
+  font-size: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-pink {
+  font-size: 18px;
+  width: 147px;
+  height: 32px;
+  background-color: #e752aa;
+}
+
+.btn-green {
+  font-size: 10px;
+  width: 86px;
+  height: 23px;
+  background-color: #a9cb40;
+}
+
+.btn-blue {
+  font-size: 9px;
+  width: 71px;
+  height: 21px;
+  background-color: #5a9eea;
+}
+
+.btn-red {
+  font-size: 9px;
+  width: 71px;
+  height: 21px;
+  background-color: #ec5959;
+}
+
+.btn-orange {
+  font-size: 9px;
+  width: 91px;
+  height: 21px;
+  background-color: #ff7122;
+}
+
+.btn-yellow {
+  font-size: 9px;
+  width: 71px;
+  height: 21px;
+  background-color: #ffc344;
+}
+
+.btn-blue-small {
+  font-size: 8px;
+  width: 76px;
+  height: 15px;
+  background-color: #5a9eea;
+}
+
+.btn-red-small {
+  font-size: 8px;
+  width: 74px;
+  height: 15px;
+  background-color: #ec5959;
+}
+
+.btn-orange-small {
+  font-size: 8px;
+  width: 83px;
+  height: 15px;
+  background-color: #ff7122;
+}
+
+.btn-yellow-small {
+  font-size: 8px;
+  width: 75px;
+  height: 15px;
+  background-color: #ffc344;
+}

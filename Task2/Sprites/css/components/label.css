@@ -1,0 +1,14 @@
+.label {
+  position: absolute;
+  z-index: 99;
+  width: 247px;
+  height: 62px;
+  left: 41%;
+  top: 53px;
+  background-image: url("../../assets/label.jpg");
+}
+
+.label:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.custom-radio,
+.custom-radio-second {
+  position: absolute;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ededed;
+}
+
+.custom-radio-second::after,
+.custom-radio::after {
+  content: "\2022"; /* symbol circle */
+  position: relative;
+  left: 1px;
+  bottom: 12px;
+  font-size: 35px;
+  color: #268cbc;
+  opacity: 0;
+}
+
+.custom-radio-btn {
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.custom-radio-btn:hover {
+  cursor: pointer;
+}
+.custom-radio-btn:checked~
+.custom-radio-second::after {
+  opacity: 1;
+}
+
+.custom-radio-btn:checked ~
+.custom-radio::after {
+  opacity: 1;
+}
+
+.custom-radio--cancel {
+  position: absolute;
+  right: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.custom-radio--cancel::before {
+  content: "\00D7"; /* symbol multiply */
+  position: relative;
+  right: 17px;
+  bottom: 12px;
+  font-size: 33px;
+  color: #ededed;
+  opacity: 1;
+}
