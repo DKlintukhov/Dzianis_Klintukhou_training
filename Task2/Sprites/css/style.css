@@ -1,0 +1,16 @@
+@import './components/buttons.css';
+@import './components/sprites.css';
+@import './components/label.css';
+@import './components/sprites-areas.css';
+
+.page {
+  max-width: 1366px;
+  min-width: 1366px;
+  height: 100%;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
+

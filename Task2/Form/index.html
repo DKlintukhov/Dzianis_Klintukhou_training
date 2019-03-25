@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <title>Task2 Form</title>
+</head>
+
+<body class="page">
+
+  <form class="page-form" action="#" method="post">
+    <fieldset class="page-form__fieldset">
+
+      <legend class="page-form__legend hide-excess-text">
+        Form Action
+        <span class="page-form__legend--background hide-excess-text">_mc4wp_action</span>
+      </legend>
+
+      <p class="page-form__text">
+        This field will allow your visitors to choose whetether
+        would like to subscribe or unsubscribe
+      </p>
+
+      <div class="page-form__field-label">
+        <label class="page-form__label--font-weight hide-excess-text" for="form-action-input">
+          Field Label
+        </label>
+        <input class="page-form__input-field page-form__input--field-block" type="text" id="form-action-input"
+          value="Form Action" readonly>
+      </div>
+
+      <div class="page-form__field-select">
+        <label class="page-form__label--font-weight hide-excess-text" for="form-action-input">
+          Choise Type
+        </label>
+        <select class="page-form__select-widget" multiple="multiple" size="1">
+          <option value="Radio Buttons">Radio Buttons</option>
+          <option>Lorem</option>
+          <option>Lorem</option>
+          <option>Lorem</option>
+        </select>
+      </div>
+
+      <div class="page-form__field-subscribe">
+        <label class="page-form__label--font-weight hide-excess-text">
+          Choises
+        </label>
+        <div class="page-form__subscribe-block vertial-flex">
+          <div class="page-form__subscribe-feild horizontal-flex">
+            <input class="custom-radio-btn custom-radio-btn--exept" type="radio" name="custom-radio" id="custom-radio-subscribe" value="1">
+            <div class="custom-radio"></div>
+            <label class="page-form__input-field page-form__input-field--width label-hover" for="custom-radio-subscribe">Subscribe</label>
+            <div class="custom-radio--cancel"></div>
+            <input class="custom-radio-btn custom-radio-btn--cancel" type="radio" name="custom-radio">
+          </div>
+          <div class="page-form__subscribe-feild horizontal-flex">
+            <input class="custom-radio-btn custom-radio-btn--exept" type="radio" name="custom-radio" id="custom-radio-unsubscribe">
+            <div class="custom-radio-second"></div>
+            <label class="page-form__input-field page-form__input-field--width label-hover" for="custom-radio-unsubscribe">Unsubscribe</label>
+            <div class="custom-radio--cancel"></div>
+            <input class="custom-radio-btn custom-radio-btn--cancel" type="radio" name="custom-radio">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-page__custom-checkbox-block">
+        <input class="custom-checkbox__checkbox" type="checkbox" id="custom-checkbox">
+        <div class="custom-checkbox"></div>
+        <label class="page-form__label--font-weight form-page__custom-label hide-excess-text" for="custom-checkbox">
+            Wrap in paragraph tags?
+        </label>
+      </div>
+
+      <button class="form-page__button-submit hide-excess-text">Add to form</button>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>

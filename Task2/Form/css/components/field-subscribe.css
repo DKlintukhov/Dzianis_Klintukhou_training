@@ -1,0 +1,31 @@
+.page-form__field-subscribe {
+  margin-top: 15px;
+}
+
+.page-form__subscribe-block {
+  position: relative;
+  justify-content: space-around;
+  width: 99.5%;
+  height: 70px;
+  border: 2px solid #ededed;
+}
+
+.page-form__subscribe-block::after {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 11px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgb(236, 235, 236) 0%, rgba(255,255,255,1) 100%);
+}
+
+.page-form__subscribe-feild {
+  padding-right: 12px;
+  width: 97%;
+  justify-content: space-around;
+}
+
+.page-form__input-field--width {
+  width: 85%;
+}
