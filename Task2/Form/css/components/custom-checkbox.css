@@ -1,6 +1,5 @@
 .form-page__custom-checkbox-block {
   position: relative;
-  margin-top: 15px;
 }
 
 .form-page__custom-label {
@@ -9,17 +8,22 @@
 
 .custom-checkbox__checkbox {
   position: relative;
+  z-index: 3;
   width: 15px;
   height: 15px;
-  z-index: 3;
   opacity: 0;
+}
+
+.custom-checkbox__checkbox:focus ~
+.custom-checkbox {
+  border: 2px solid #e45d5d;
 }
 
 .custom-checkbox {
   position: absolute;
+  bottom: 8px;
   width: 15px;
   height: 15px;
-  bottom: 8px;
   border: 2px solid #ededed;
 }
 
@@ -27,9 +31,9 @@
   content: "\2713";
   position: relative;
   left: 1px;
+  opacity: 0;
   font-weight: 700;
   color: #0088c1;
-  opacity: 0;
 }
 
 .custom-checkbox__checkbox:checked ~

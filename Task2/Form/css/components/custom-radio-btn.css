@@ -14,27 +14,32 @@
   position: relative;
   left: 1px;
   bottom: 12px;
+  opacity: 0;
   font-size: 35px;
   color: #268cbc;
-  opacity: 0;
 }
 
+.custom-radio-btn-c,
 .custom-radio-btn {
-  padding: 5px;
+  z-index: 1;
   width: 15px;
   height: 15px;
-  z-index: 1;
+  padding: 5px;
   opacity: 0;
 }
 
+.custom-radio-btn-c,
 .custom-radio-btn:hover {
   cursor: pointer;
 }
+
 .custom-radio-btn:checked~
 .custom-radio-second::after {
   opacity: 1;
 }
 
+.custom-radio-btn:checked~
+.custom-radio-second::after,
 .custom-radio-btn:checked ~
 .custom-radio::after {
   opacity: 1;
@@ -56,4 +61,20 @@
   font-size: 33px;
   color: #ededed;
   opacity: 1;
+}
+
+.custom-radio-btn-c:hover ~
+.custom-radio--cancel::before {
+  content: "\00D7"; /* symbol multiply */
+  position: relative;
+  right: 17px;
+  bottom: 12px;
+  opacity: 1;
+  font-size: 33px;
+  color: #e45d5d;
+}
+
+.custom-radio-btn-c:focus ~
+.custom-radio--cancel::before {
+  color: #e45d5d;
 }

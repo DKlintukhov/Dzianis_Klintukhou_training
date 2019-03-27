@@ -36,3 +36,7 @@
 .label-hover:hover {
   cursor: pointer;
 }
+
+.block-margin-top {
+  margin-top: 15px;
+}
