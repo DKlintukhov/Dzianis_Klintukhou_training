@@ -9,11 +9,11 @@
 }
 
 .page-form__legend--background {
+  padding: 0 10px;
+  background: #ededed;
   font-family: cursive;
   font-size: .8rem;
   font-weight: 700;
-  background: #ededed;
-  padding: 0 10px;
 }
 
 .page-form__text {

@@ -1,10 +1,10 @@
 .label {
   position: absolute;
   z-index: 99;
-  width: 247px;
-  height: 62px;
   left: 41%;
   top: 53px;
+  width: 247px;
+  height: 62px;
   background-image: url("../../assets/label.jpg");
 }
 
