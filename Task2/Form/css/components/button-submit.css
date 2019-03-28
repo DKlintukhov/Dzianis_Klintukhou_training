@@ -1,0 +1,14 @@
+.form-page__button-submit {
+  width: 95px;
+  height: 30px;
+  border: 1px solid #b8ced6;
+  border-radius: 5px;
+  background-color: #0085ba;
+  font-size: 14px;
+  color: #fff;
+}
+
+.form-page__button-submit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

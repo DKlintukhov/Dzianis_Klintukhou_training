@@ -1,0 +1,27 @@
+@import './mixins.css';
+
+@import './components/form-legend.css';
+@import './components/field-label.css';
+@import './components/field-select.css';
+@import './components/field-subscribe.css';
+@import './components/custom-radio-btn.css';
+@import './components/custom-checkbox.css';
+@import './components/button-submit.css';
+@import './components/for-ie11-firefox.css';
+
+.page {
+  font-family: sans-serif;
+  margin-top: 50px;
+  background-color: rgb(240, 232, 232);
+  
+}
+
+.page-form {
+  height: 480px;
+  width: 430px;
+  margin: auto;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}

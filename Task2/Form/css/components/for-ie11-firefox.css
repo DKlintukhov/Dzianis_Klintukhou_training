@@ -1,0 +1,49 @@
+
+/* ie11 */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+  .custom-checkbox__checkbox {
+    bottom: 7px;
+  }
+
+  .custom-checkbox {
+    bottom: 10px;
+  }
+
+  .custom-checkbox::after {
+    left: 1px;
+    bottom: 3px;
+  }
+
+  .custom-radio {
+    bottom: 45px;
+  }
+
+  .custom-radio-second {
+    bottom: 11px;
+  }
+
+  .custom-radio--cancel::before {
+    right: 15px;
+    bottom: 18px;
+  }
+  .custom-radio-second::after,
+  .custom-radio::after {
+    font-size: 35px;
+  }  
+}
+
+/* firefox */
+
+@-moz-document url-prefix() {
+  .custom-radio-second::after,
+  .custom-radio::after {
+    font-size: 32px;
+    left: 2px;
+  }
+
+  .custom-checkbox::after {
+    left: 1px;
+    bottom: 2px;
+  }
+}

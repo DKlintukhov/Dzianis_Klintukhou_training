@@ -1,0 +1,9 @@
+.page-form__select-widget {
+  display: block;
+  width: 35%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #ededed;
+  text-align: center;
+  font-size: 1.1rem;
+}

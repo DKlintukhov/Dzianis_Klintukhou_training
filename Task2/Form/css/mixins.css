@@ -1,0 +1,42 @@
+.page-form__label--font-weight {
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.page-form__label--font-weight:hover {
+  cursor: pointer;
+  color: rgb(121, 117, 117);
+}
+
+.page-form__input-field {
+  border: 2px solid #ededed;
+  padding: 3px;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vertial-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide-excess-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.label-hover:hover {
+  cursor: pointer;
+}
+
+.block-margin-top {
+  margin-top: 15px;
+}

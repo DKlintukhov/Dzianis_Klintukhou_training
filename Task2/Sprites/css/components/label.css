@@ -1,0 +1,31 @@
+.label {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 99;
+  left: 41%;
+  top: 53px;
+  width: 243px;
+  height: 57px;
+  text-align: center;
+  opacity: .95;
+  border: 3px solid rgb(151, 141, 141);
+  background-color: #fff;
+  outline: 5px solid white;
+  outline-offset: 8px solid white;
+  font-family: "Mistral";
+}
+
+.label:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.label__link {
+  display: inline-block;
+  padding-top: 6%;;
+  font-size: 2rem;
+  text-decoration: none;
+  opacity: .7;
+  color: #A6ABB1;
+  
+}

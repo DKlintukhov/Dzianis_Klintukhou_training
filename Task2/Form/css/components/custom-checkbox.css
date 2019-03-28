@@ -1,0 +1,42 @@
+.form-page__custom-checkbox-block {
+  position: relative;
+}
+
+.form-page__custom-label {
+  padding-left: 5px;
+}
+
+.custom-checkbox__checkbox {
+  position: relative;
+  z-index: 3;
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+}
+
+.custom-checkbox__checkbox:focus ~
+.custom-checkbox {
+  border: 2px solid #e45d5d;
+}
+
+.custom-checkbox {
+  position: absolute;
+  bottom: 8px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ededed;
+}
+
+.custom-checkbox::after {
+  content: "\2713";
+  position: relative;
+  left: 1px;
+  opacity: 0;
+  font-weight: 700;
+  color: #0088c1;
+}
+
+.custom-checkbox__checkbox:checked ~
+.custom-checkbox::after {
+  opacity: 1;
+}
