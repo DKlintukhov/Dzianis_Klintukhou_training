@@ -1,0 +1,134 @@
+@media screen and (min-width: 1025px) {
+  .-dk-header-mobile__navigation,
+  .-dk-hamburger-button,
+  .-dk-hamburger-button-close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .__horizontal-flex {
+    flex-wrap: wrap;
+  }
+
+  .__width-half {
+    width: 100%;
+  }
+
+  .__width-quarter {
+    width: 50%;
+  } 
+
+  .-dk-autor-block .__width-half {
+    width: 50%;
+  }
+  
+  .-dk-autor-block .__width-half {
+    width: 100%;
+  }
+
+  .-dk-header  {
+    height: auto;
+  }
+
+  .-dk-header__image-block {
+    height: 35rem;
+  }
+
+  .-dk-header__description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .-dk-header__button {
+    margin: 0;
+  }
+
+  .-dk-navigation {
+    margin: auto;
+  }
+
+  .-dk-progress-bar {
+    width: 90%;
+    margin: auto;
+  }
+
+  .-dk-about__skills {
+    text-align: center;
+  }
+
+  .__width-quarter {
+    width: 100%;
+  }
+
+  .-dk-form__button {
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .-dk-testimonal-section__caption {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .-dk-testimonal-section__subcaption {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .-dk-contacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .-dk-header__navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px) {
+
+  .-dk-autor-block__benefits-wrapper,
+  .-dk-autor-block {
+    text-align: center;
+  }
+
+  .-dk-skill-description {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .-dk-form__button {
+    display: block;
+    margin: auto;
+  }
+
+  .-dk-testimonal-section__subcaption,
+  .-dk-testimonal-section__caption {
+    width: 100%;
+  }
+
+  .-dk-contacts {
+    padding: 3rem 3rem;
+  }
+
+  .-dk-autor-block__benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .-dk-autor-block__text {
+    padding: 0;
+  }
+
+  .-dk-header__button {
+    margin: 0;
+  }
+}
+
+
+
+
+

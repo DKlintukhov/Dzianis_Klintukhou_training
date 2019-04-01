@@ -1,0 +1,38 @@
+.-dk-about-section {
+  flex-wrap: wrap;
+}
+
+.-dk-about-section__article {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+
+.-dk-about-section__article--bg-white {
+  background-color: #fff;
+}
+
+.-dk-about__skills-subcaption,
+.-dk-about-section__about-subcaption {
+  display: block;
+  padding-top: 1rem;
+}
+
+.-dk-about-section__image-block {
+  background: url("../../assets/images/about-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-about__skills {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+
+.-dk-about__skills--bg-gold {
+  background-color: #E4AE58;
+}
+
+.-dk-about__skills-subcaption--font-color-light,
+.-dk-about__skills-caption--font-color-light {
+  color: #FAFFF8;
+}
+

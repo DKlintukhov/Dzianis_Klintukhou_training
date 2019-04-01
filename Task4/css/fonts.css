@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-Regular.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-Light.otf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-It.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-Regular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.eot");
+  src:
+    url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.svg") format('svg'),
+    url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.ttf") format('truetype'),
+    url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.woff") format('woff'),
+    url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.woff2") format('woff2'),
+    url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.eot") format('embedded-opentype');
+}

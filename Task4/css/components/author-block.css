@@ -1,0 +1,76 @@
+.-dk-autor-block__info,
+.-dk-autor-block  {
+  box-sizing: border-box;
+}
+
+.-dk-autor-block__experience-image {
+  box-sizing: border-box;
+  background: url("../../assets/images/experience-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-autor-block__info  {
+  padding: 1rem 2rem;
+}
+
+.-dk-autor-block__experience-info--bg-light {
+  background-color: #E9714C;
+}
+
+.-dk-autor-block__icon--color-light,
+.-dk-autor-block__subcaption--font-light,
+.-dk-autor-block__text--font-light,
+.-dk-autor-block__caption--font-light,
+.-dk-autor-block__list-caption {
+  color: #FFFFFB;
+}
+
+.-dk-autor-block__benefits {
+  padding: 1rem 0;
+}
+
+.-dk-autor-block__subcaption {
+  display: inline-block;
+  padding-top: .5rem;
+}
+
+.-dk-autor-block__icon {
+  display: inline-block;
+  margin: -.5rem .5rem 0 0;
+}
+
+.-dk-autor-block__date {
+  display: inline-block;
+  margin: .6rem 0 0 .2rem;
+}
+
+.-dk-autor-block__date--font-dark {
+  color: #573124;
+}
+
+.-dk-autor-block__date--font-light {
+  color: #897435;
+}
+
+.-dk-autor-block__text {
+  padding-top: .5rem;
+  padding-left: 3.7rem;
+  align-self: flex-end;
+}
+
+.-dk-autor-block__education-image {
+  box-sizing: border-box;
+  background: url("../../assets/images/education-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-autor-block__education-info--bg-light {
+  background-color: #E4AE58;
+}
+
+.-dk-autor-block__benefits-wrapper {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 1rem;
+}
+

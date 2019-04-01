@@ -1,0 +1,29 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .-dk-testimonal-section::after {
+    left: 0;
+    top: 0;
+  }
+
+  .-dk-progress-bar__line--frontend::after {
+    left: 45%;
+  }
+
+  .-dk-progress-bar__line--backend::after {
+    left: 36%;
+  }
+
+  .-dk-progress-bar__line--html::after {
+    left: 40%;
+  }
+
+  .-dk-form {
+    color: #FFF;
+  }
+
+  .-dk-form__input-area,
+  .-dk-form__input-field,
+  .-dk-form__input-area:-ms-input-placeholder,
+  .-dk-form__input-field:-ms-input-placeholder {
+    color: #FFF;
+  }
+}
