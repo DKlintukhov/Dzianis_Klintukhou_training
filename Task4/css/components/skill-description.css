@@ -1,0 +1,48 @@
+.-dk-skill-description {
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.-dk-skill-description--bg-for-design {
+  background-color: #E4AE58;
+}
+
+.-dk-skill-description--bg-for-media {
+  background-color: #E9714C;
+}
+
+.-dk-skill-description--bg-for-mobile {
+  background-color: #161616;
+}
+
+.-dk-skill-description--bg-for-coding {
+  background-color: #fff;
+}
+
+.-dk-skill-description__icon--font-light,
+.-dk-skill__caption--font-light,
+.-dk-skill__text--font-light {
+  color: #FBFDFC;
+}
+
+.-dk-skill__caption--font-color-dark {
+  color: #2E386D;
+}
+
+.-dk-skill-description__icon {
+  font-size: 3rem;
+}
+
+.-dk-skill-description__icon--color-dark {
+  color: #353338;
+}
+
+.-dk-skill__caption {
+  font-size: 1.9rem;
+}
+
+.-dk-skill__text {
+  text-align: center;
+  max-width: 100%;
+}

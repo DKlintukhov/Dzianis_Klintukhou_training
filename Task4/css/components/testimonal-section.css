@@ -1,0 +1,52 @@
+.-dk-testimonal-section {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.-dk-testimonal-section--bg-image {
+  background: url("../../assets/images/quotes-bg.jpg") center;
+  background-size: cover;
+}
+
+.-dk-testimonal-section::after {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.-dk-testimonal-section__subcaption,
+.-dk-testimonal-section__caption {
+  width: 70%;
+  text-align: center;
+}
+
+.-dk-testimonal-section__caption,
+.-dk-testimonal-section__icon {
+  text-align: center;
+}
+
+.-dk-testimonal-section__caption--font-light,
+.-dk-testimonal-section__icon--font-light {
+  color: #FFF;
+}
+
+.-dk-testimonal-section__icon:hover,
+.-dk-testimonal-section__icon:active {
+  cursor: pointer;
+  color: gold;
+  transform: rotateY(360deg);
+}
+
+.-dk-testimonal-section__subcaption--font-dark {
+  color: #818471;
+}
+

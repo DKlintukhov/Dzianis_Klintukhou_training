@@ -1,0 +1,63 @@
+.-dk-header {
+  height: 100vh;
+}
+
+.-dk-header__image-block {
+  background: url("../../assets/images/home-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-header__info-section {
+  box-sizing: border-box;
+}
+
+.-dk-header__logo {
+  padding-left: 10rem;
+  padding-top: 1rem;
+}
+
+.-dk-header__info-section {
+  padding: 2rem 1.5rem;
+}
+
+.-dk-header__info-section--bg-light {
+  background: #F0E2D7;
+}
+
+.-dk-header__navigation {
+  padding-left: 2rem;
+  width: 30rem;
+}
+
+.-dk-header__description {
+  padding-top: 10rem;
+}
+
+.-dk-header__title {
+  padding: 1rem 0 0 0;
+}
+
+.-dk-header__button {
+  margin-top: 5rem;
+}
+
+.-dk-header__button {
+  width: 10rem;
+  border-radius: 1.5rem;
+  height: 2.7rem;
+}
+
+.-dk-header__button--bg-light {
+  background: #F0E2D7;
+}
+
+.-dk-header__button--border-dark {
+  border: 3px solid #262A29;
+}
+
+.-dk-header__button--enabled-hover:hover,
+.-dk-header__button--enabled-focus:focus {
+  cursor: pointer;
+  background: #E1B97C;
+  outline: none;
+}

@@ -1,0 +1,52 @@
+
+.-dk-contacts-section__img {
+  box-sizing: border-box;
+  height: 35rem;
+  background: url("../../assets/images/contact-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-contacts {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+}
+
+.-dk-contacts--bg-dark {
+  background-color: #161616;
+}
+
+.-dk-contacts__link:hover,
+.-dk-contacts__link:active,
+.-dk-contacts__adress:hover,
+.-dk-contacts__subcaption--font-light,
+.-dk-contacts__caption--font-light {
+  color: #fff;
+}
+
+.-dk-contacts__adress {
+  outline: none;
+  font-style: normal;
+}
+
+.-dk-contacts__link--font-dark,
+.-dk-contacts__icon--font-dark,
+.-dk-contacts__adress--font-dark {
+  color: #868686;
+}
+
+.-dk-contacts__adress:hover {
+  cursor: pointer;
+}
+
+.-dk-contacts__icon {
+  padding-right: 1rem;
+}
+
+.-dk-contacts__link {
+  outline: none;
+  color: #868686;
+}
+
+.-dk-contacts__link--color-light {
+  color: #E2B165;
+}
