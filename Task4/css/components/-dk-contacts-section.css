@@ -1,0 +1,82 @@
+.-dk-contacts-section__form {
+  padding: 2.5rem 1rem;
+  width: 50%;
+}
+
+.-dk-contacts-section__img {
+  width: 25%;
+  height: 38rem;
+  background: url("../../assets/images/contact-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-contacts-section__contacts {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 1rem 1.5rem;
+}
+
+.-dk-contacts-section__contacts_bg-dark {
+  background-color: #161616;
+}
+
+.-dk-contacts-section__caption {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.-dk-contacts-section__sub-caption {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.-dk-contacts-section__link:hover,
+.-dk-contacts-section:active,
+.-dk-contacts-section__address:hover,
+.-dk-contacts-section__sub-caption_font-light,
+.-dk-contacts-section__caption_font-light {
+  color: #fff;
+}
+
+.-dk-contacts-section__address {
+  outline: none;
+  font-style: normal;
+}
+
+.-dk-contacts-section__address {
+  font-size: 1rem;
+  transition: all linear .3s;
+}
+
+.-dk-contacts-section__link_font-dark,
+.-dk-contacts-section__icon_font-dark,
+.-dk-contacts-section__address_font-dark {
+  color: #868686;
+}
+
+.-dk-contacts-section__address,
+.-dk-contacts-section__link:hover {
+  cursor: pointer;
+}
+
+.-dk-contacts-section__icon {
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+.-dk-contacts-section__icon_fix-padding {
+  padding-right: 12px;
+}
+
+
+.-dk-contacts-section__link {
+  outline: none;
+  color: #868686;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all linear .3s;
+}
+
+.-dk-contacts-section__link_color-light {
+  color: #E2B165;
+}

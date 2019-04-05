@@ -1,18 +1,18 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .-dk-testimonal-section::after {
+  .-dk-testimonial-section::after {
     left: 0;
     top: 0;
   }
 
-  .-dk-progress-bar__line--frontend::after {
+  .-dk-progress-bar__line_1::after {
     left: 45%;
   }
 
-  .-dk-progress-bar__line--backend::after {
+  .-dk-progress-bar__line_2::after {
     left: 36%;
   }
 
-  .-dk-progress-bar__line--html::after {
+  .-dk-progress-bar__line_3::after {
     left: 40%;
   }
 
@@ -25,5 +25,22 @@
   .-dk-form__input-area:-ms-input-placeholder,
   .-dk-form__input-field:-ms-input-placeholder {
     color: #FFF;
+  }
+
+  .-dk-mobile-navigation__list {
+    justify-content: space-around;
+    justify-items: center;
+    height: 70%;
+  }
+
+  .-dk-header__hamburger-button-close {
+    position: absolute;
+    right: 5px;
+    opacity: 0;
+  }
+
+  .-dk-about-section__skills {
+    justify-content: space-around;
+    padding: 1.5rem 2.5rem 4rem;
   }
 }

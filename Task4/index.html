@@ -1,996 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/normalize.css">
   <title>Project</title>
 </head>
+<body>
+  <div class="-dk-page">
+    <!-- <Header> -->
+    <header class="-dk-header -dk-page__header">
 
-<body class="page">
+      <!-- <Radios for toggle hamburger> -->
+      <input class="-dk-header__radio-open" type="radio" name="radio">
+      <input class="-dk-header__radio-close" type="radio" name="radio">
 
-  <!-- <Hamburger button> -->
-  <input class="-dk-hamburger-button__radio-open" type="radio" name="radio">
-  <input class="-dk-hamburger-button__radio-close" type="radio" name="radio">
-  
-  <div class="-dk-hamburger-button">
-    <div class="-dk-hamburger-button__line-1
-                -dk-hamburger-button__line--bg-dark"></div>
+      <!-- <Hamburger button> -->
+      <div class="-dk-hamburger-button-open -dk-header__hamburger-button-open">
+        <div class="-dk-hamburger-button-open__line-1 -dk-hamburger-button-open__line_bg-dark"></div>
+        <div class="-dk-hamburger-button-open__line-2 -dk-hamburger-button-open__line_bg-dark"></div>
+        <div class="-dk-hamburger-button-open__line-3 -dk-hamburger-button-open__line_bg-dark"></div>
+      </div>
+      <div class="-dk-hamburger-button-close -dk-header__hamburger-button-close">
+        <div class="-dk-hamburger-button-close__line-1 -dk-hamburger-button-close__line_bg-light"></div>
+        <div class="-dk-hamburger-button-close__line-2 -dk-hamburger-button-close__line_bg-light"></div>
+      </div>
 
-    <div class="-dk-hamburger-button__line-2
-                -dk-hamburger-button__line--bg-dark"></div>
-
-    <div class="-dk-hamburger-button__line-3
-                -dk-hamburger-button__line--bg-dark"></div>
-  </div>
-  
-  <div class="-dk-hamburger-button-close">
-    <div class="-dk-hamburger-button-close__line-1
-                -dk-hamburger-button-close__line--bg-light"></div>
-
-    <div class="-dk-hamburger-button-close__line-2
-                -dk-hamburger-button-close__line--bg-light"></div>
-  </div>
-  <!-- </Hamburger button> -->
-
-  <!-- <Navigation Mobile> -->
-  <nav class="-dk-header-mobile__navigation
-                __vertical-flex
-                __no-margin">
-
-    <ul class="-dk-navigation__list 
-                        __no-margin 
-                        __default-list 
-                        __vertical-flex">
-
-      <li class="-dk-navigation__item
-                        __delay-animation
-                        __enabled-active">
-
-        <a href="#" class="-dk-navigation__link
-                                    __font-normal
-                                    __font-uppercase 
-                                    __font-light
-                                    __font-bolder
-                                    __enabled-focus
-                                    __enabled-hover
-                                    __delay-animation
-                                    __default-link">
-          Home
-        </a>
-      </li>
-
-      <li class="-dk-navigation__item
-            __enabled-active
-            __delay-animation">
-
-        <a href="#about" class="-dk-navigation__link 
-                          __font-normal
-                          __font-uppercase 
-                          __font-light
-                          __font-bolder
-                          __enabled-focus
-                          __enabled-hover
-                          __delay-animation
-                          __default-link">
-          About me
-        </a>
-      </li>
-      <li class="-dk-navigation__item
-          __enabled-active
-          __delay-animation">
-
-        <a href="#experiences" class="-dk-navigation__link
-                                __font-normal 
-                                __font-uppercase 
-                                __font-light
-                                __font-bolder
-                                __enabled-focus
-                                __enabled-hover
-                                __delay-animation
-                                __default-link">
-          Experiences
-        </a>
-      </li>
-
-      <li class="-dk-navigation__item
-            __enabled-active
-            __delay-animation">
-
-        <a href="#testimonal" class="-dk-navigation__link 
-                              __font-normal
-                              __font-uppercase 
-                              __font-light
-                              __font-bolder
-                              __enabled-focus
-                              __enabled-hover
-                              __delay-animation
-                              __default-link">
-          Testimonial
-        </a>
-      </li>
-
-      <li class="-dk-navigation__item
-            __enabled-active
-            __delay-animation">
-
-        <a href="#contact" class="-dk-navigation__link 
-                            __font-normal
-                            __font-uppercase 
-                            __font-light
-                            __font-bolder
-                            __enabled-focus
-                            __enabled-hover
-                            __delay-animation
-                            __default-link">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- </Navigation Mobile> -->
-
-  <!-- <Header> -->
-  <header class="-dk-header
-                __horizontal-flex
-                __width-full">
-
-    <section class="-dk-image-block 
-                    -dk-header__image-block 
-                    __width-half">
-
-      <h1 class="-dk-logo 
-                  -dk-header__logo 
-                  __no-margin">
-
-        <a href="#" class="__font-dark
-                          __font-medium
-                          __default-link">
-          Stimulus
-        </a>
-
-      </h1>
-    </section>
-
-    <div class="-dk-header__info-section 
-                    -dk-header__info-section--bg-light
-                    __no-margin 
-                    __width-half">
-
-      <nav class="-dk-navigation
-                  -dk-header__navigation 
-                  __no-margin">
-
-        <ul class="-dk-navigation__list 
-                  __no-margin 
-                  __default-list 
-                  __horizontal-flex">
-
-          <li class="-dk-navigation__item
-                    __delay-animation
-                    __enabled-active">
-
-            <a href="#" class="-dk-navigation__link 
-                                __font-normal
-                                __font-uppercase 
-                                __font-light
-                                __font-bolder
-                                __enabled-focus
-                                __enabled-hover
-                                __delay-animation
-                                __default-link">
+      <!-- <Navigation Mobile> -->
+      <nav class="-dk-mobile-navigation -dk-header__mobile-navigation">
+        <ul class="-dk-mobile-navigation__list">
+          <li class="-dk-mobile-navigation__item">
+            <a href="#" class="-dk-mobile-navigation__link -dk-mobile-navigation__link_text-decoration">
               Home
             </a>
           </li>
-
-          <li class="-dk-navigation__item
-                      __enabled-active
-                      __delay-animation">
-
-            <a href="#about" class="-dk-navigation__link 
-                                    __font-normal
-                                    __font-uppercase 
-                                    __font-light
-                                    __font-bolder
-                                    __enabled-focus
-                                    __enabled-hover
-                                    __delay-animation
-                                    __default-link">
+          <li class="-dk-mobile-navigation__item">
+            <a href="#about" class="-dk-mobile-navigation__link -dk-mobile-navigation__link_text-decoration">
               About me
             </a>
           </li>
-          <li class="-dk-navigation__item
-                    __enabled-active
-                    __delay-animation">
-
-            <a href="#experiences" class="-dk-navigation__link
-                                          __font-normal 
-                                          __font-uppercase 
-                                          __font-light
-                                          __font-bolder
-                                          __enabled-focus
-                                          __enabled-hover
-                                          __delay-animation
-                                          __default-link">
+          <li class="-dk-mobile-navigation__item">
+            <a href="#experiences" class="-dk-mobile-navigation__link -dk-mobile-navigation__link_text-decoration">
               Experiences
             </a>
           </li>
-
-          <li class="-dk-navigation__item
-                      __enabled-active
-                      __delay-animation">
-
-            <a href="#testimonal" class="-dk-navigation__link 
-                                        __font-normal
-                                        __font-uppercase 
-                                        __font-light
-                                        __font-bolder
-                                        __enabled-focus
-                                        __enabled-hover
-                                        __delay-animation
-                                        __default-link">
+          <li class="-dk-mobile-navigation__item">
+            <a href="#testimonial" class="-dk-mobile-navigation__link -dk-mobile-navigation__link_text-decoration">
               Testimonial
             </a>
           </li>
-
-          <li class="-dk-navigation__item
-                      __enabled-active
-                      __delay-animation">
-
-            <a href="#contact" class="-dk-navigation__link 
-                                      __font-normal
-                                      __font-uppercase 
-                                      __font-light
-                                      __font-bolder
-                                      __enabled-focus
-                                      __enabled-hover
-                                      __delay-animation
-                                      __default-link">
+          <li class="-dk-mobile-navigation__item">
+            <a href="#contact" class="-dk-mobile-navigation__link -dk-mobile-navigation__link_text-decoration">
               Contact
             </a>
           </li>
         </ul>
       </nav>
-
-      <article class="-dk-header__description">
-
-        <span class="-dk-header__subtitle 
-                __font-small
-                __font-bolder 
-                __font-light
-                __font-uppercase">
-          Welcome to my website
-        </span>
-
-        <h2 class="-dk-header__title 
-                  __no-margin
-                  __font-lighter
-                  __font-big">
-          Hello, I am
-
-          <span class="__font-dark
-                      __font-bolder">
+      
+      <!-- <Header Image> -->
+      <section class="-dk-header__image-block">
+        <h1 class="-dk-header__logo -dk-header__logo_text-decoration">
+          <a href="#" class="-dk-header__link -dk-header__link_text-dark">
             Stimulus
+          </a>
+        </h1>
+      </section>
+      
+      <!-- <Page Info> -->
+      <div class="-dk-page-info-section -dk-header__info-section -dk-header__info-section_bg-color">
+
+        <!-- <Navigation> -->
+        <nav class="-dk-navigation -dk-header__navigation -dk-page-info-section__navigation">
+          <ul class="-dk-navigation__list">
+            <li class="-dk-navigation__item">
+              <a href="#"
+                class="-dk-navigation__link -dk-navigation__link_text-decoration -dk-navigation__link_text-color">
+                Home
+              </a>
+            </li>
+            <li class="-dk-navigation__item">
+              <a href="#about"
+                class="-dk-navigation__link -dk-navigation__link_text-decoration -dk-navigation__link_text-color">
+                About me
+              </a>
+            </li>
+            <li class="-dk-navigation__item">
+              <a href="#experiences"
+                class="-dk-navigation__link -dk-navigation__link_text-decoration -dk-navigation__link_text-color">
+                Experiences
+              </a>
+            </li>
+            <li class="-dk-navigation__item">
+              <a href="#testimonial"
+                class="-dk-navigation__link -dk-navigation__link_text-decoration -dk-navigation__link_text-color">
+                Testimonial
+              </a>
+            </li>
+            <li class="-dk-navigation__item">
+              <a href="#contact"
+                class="-dk-navigation__link -dk-navigation__link_text-decoration -dk-navigation__link_text-color">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- Page Title -->
+        <article class="-dk-page-info-section__page-title">
+          <span class="-dk-page-title__sub-title -dk-page-title__sub-title_text-color">
+            Welcome to my website
           </span>
-
-          currently based in New York city.
-        </h2>
-
-        <p class="-dk-header__text 
-                  __line-height-big
-                  __font-normal
-                  __font-light">
-          Done auctor at efficitur lacinia. Prasesent bibendum efficitur ipsum, et mattis tellus
-          interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissm urna. Vestibulum id
-          accumsan quam.
-        </p>
-
-        <button class="-dk-header__button
-                      -dk-header__button--bg-light
-                      -dk-header__button--border-dark
-                      -dk-header__button--enabled-hover
-                      -dk-header__button--enabled-focus
-                      __font-normal
-                      __font-bolder 
-                      __font-dark 
-                      __font-uppercase
-                      __enabled-active
-                      __hide-excess-text
-                      __delay-animation">
-          Get started
-        </button>
-
-      </article>
-    </div>
-
-  </header>
-  <!-- </Header> -->
-
-  <main class="-dk-main 
-                __horizontal-flex">
-
-    <!-- <About Section> -->
-    <div class="-dk-about-section 
-                    __horizontal-flex 
-                    __width-full" id="about">
-      <article class="-dk-about-section__article 
-                      -dk-about-section__article--bg-white
-                      __vertical-flex 
-                      __width-half">
-
-        <h3 class="-dk-about-section__about-caption 
-                  __font-big
-                  __font-lighter">
-          Donec auctor
-
-          <span class="-dk-about-section__about-subcaption 
-                    __font-gold
-                    __font-small">
-            Sed vulputate vitae diam quis bibendum
-          </span>
-        </h3>
-
-        <p class="__line-height-big
-                  __font-normal
-                  __hide-excess-text
-                  __font-light">
-          Phasellus vulputate tellus nec tortor varius elementium. Curabitur at
-          pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.
-          Maris convallis eros massa.
-        </p>
-
-        <p class="__line-height-big
-                  __font-normal
-                  __hide-excess-text
-                  __font-light">
-          Quisque viverra iaculis alicuam. Etiam volutpat, justo non aliquam bibendum,
-          sem nibh molis erat, quis porta odio at velit.
-        </p>
-
-      </article>
-
-      <div class="-dk-about-section__image-block
-                  __width-quarter">
-      </div>
-
-      <article class="-dk-about__skills 
-                      -dk-about__skills--bg-gold
-                      __vertical-flex 
-                      __width-quarter">
-
-        <h2 class="-dk-about__skills-caption 
-                    -dk-about__skills-caption--font-color-light
-                    __font-big
-                    __font-lighter">
-          My Skills
-
-          <span class="-dk-about__skills-subcaption
-                        -dk-about__skills-subcaption--font-color-light
-                        __font-small">
-            Photoshop . HTML CSS JS . Web Design
-          </span>
-
-        </h2>
-        <div class="-dk-progress-bar">
-          <div class="about-skills__progress-caption">
-            <div class="-dk-progress-bar__caption 
-                        __horizontal-flex">
-
-              <span class="-dk-progress-bar__caption-skill
-                            __font-normal
-                            __font-bolder">
-                Frontend Design
-              </span>
-
-              <span class="-dk-progress-bar__caption-persentage
-                            __font-normal
-                            __font-bolder">
-                90%
-              </span>
-
-            </div>
-            <hr class="-dk-progress-bar__line 
-                        -dk-progress-bar__line--frontend">
-          </div>
-        </div>
-
-        <div class="-dk-progress-bar">
-          <div class="about-skills__progress-caption">
-            <div class="-dk-progress-bar__caption 
-                        __horizontal-flex">
-
-              <span class="-dk-progress-bar__caption-skill
-                            __font-normal
-                            __font-bolder">
-                Backend processing
-              </span>
-
-              <span class="-dk-progress-bar__caption-persentage
-                            __font-normal
-                            __font-bolder">
-                70%
-              </span>
-            </div>
-
-            <hr class="-dk-progress-bar__line 
-                        -dk-progress-bar__line--backend">
-          </div>
-        </div>
-
-        <div class="-dk-progress-bar">
-          <div class="about-skills__progress-caption">
-            <div class="-dk-progress-bar__caption 
-                        __horizontal-flex">
-
-              <span class="-dk-progress-bar__caption-skill
-                            __font-normal
-                            __font-bolder">
-                HTML & CSS3
-              </span>
-
-              <span class="-dk-progress-bar__caption-persentage
-                            __font-normal
-                            __font-bolder">
-                80%
-              </span>
-
-            </div>
-            <hr class="-dk-progress-bar__line 
-                        -dk-progress-bar__line--html">
-          </div>
-        </div>
-      </article>
-
-      <div class="-dk-skill-description 
-                  -dk-skill-description--bg-for-design 
-                  __width-quarter 
-                  __vertical-flex">
-
-        <div class="-dk-skill-description__icon 
-                    -dk-skill-description__icon--font-light
-                    __font-big">
-
-          <i class="fas fa-desktop"></i>
-        </div>
-
-        <h2 class="-dk-skill__caption 
-                    -dk-skill__caption--font-light
-                    __font-lighter
-                    __font-big">
-          Interface Design
-        </h2>
-
-        <p class="-dk-skill__text
-                  -dk-skill__text--font-light
-                  __font-normal">
-          Phasellus vulputate tellus nec tortor varius elementum.
-          Curabitur at pulvinar.
-        </p>
-      </div>
-
-      <div class="-dk-skill-description 
-                -dk-skill-description--bg-for-media 
-                __width-quarter 
-                __vertical-flex">
-
-        <div class="-dk-skill-description__icon 
-                    -dk-skill-description__icon--font-light
-                    __font-big">
-
-          <i class="fas fa-paper-plane"></i>
-        </div>
-
-        <h2 class="-dk-skill__caption 
-                    -dk-skill__caption--font-light
-                    __font-lighter
-                    __font-big">
-          Media Strategy
-        </h2>
-
-        <p class="-dk-skill__text 
-                  -dk-skill__text--font-light
-                  __font-normal">
-          Phasellus vulputate tellus nec tortor varius elementum.
-          Curabitur at pulvinar.
-        </p>
-      </div>
-
-      <div class="-dk-skill-description 
-                  -dk-skill-description--bg-for-mobile 
-                  __width-quarter 
-                  __vertical-flex">
-
-        <div class="-dk-skill-description__icon 
-                    -dk-skill-description__icon--font-light
-                    __font-big">
-
-          <i class="fas fa-table"></i>
-        </div>
-
-        <h2 class="-dk-skill__caption 
-                  -dk-skill__caption--font-light
-                  __font-lighter
-                  __font-big">
-          Mobile App
-        </h2>
-
-        <p class="-dk-skill__text 
-                  -dk-skill__text--font-light
-                  __font-normal">
-          Mauris convallis eros massa, vitae euismod arcu tempus ut.
-          Quisque viverra iaculis.
-        </p>
-      </div>
-
-      <div class="-dk-skill-description 
-                  -dk-skill-description--bg-for-coding 
-                  __width-quarter 
-                  __vertical-flex">
-
-        <div class="-dk-skill-description__icon 
-                    -dk-skill-description__icon--color-dark
-                    __font-big">
-
-          <i class="fab fa-html5"></i>
-        </div>
-
-        <h2 class="-dk-skill__caption 
-                    -dk-skill__caption--font-color-dark
-                    __font-lighter
-                    __font-big">
-          Coding
-        </h2>
-
-        <p class="-dk-skill__text
-                  __font-light
-                  __font-normal">
-          Mauris convallis eros massa, vitae euismod arcu tempus ut.
-          Quisque viverra iaculis.
-        </p>
-      </div>
-    </div>
-    <!-- </About Section> -->
-
-    <!-- <Experience Section> -->
-    <section class="-dk-autor-block
-                    __horizontal-flex 
-                    __width-full" id="experiences">
-
-      <div class="-dk-autor-block__experience-image 
-                  __width-half"></div>
-
-      <div class="-dk-autor-block__info
-                  -dk-autor-block__experience-info--bg-light
-                  __vertical-flex 
-                  __width-half">
-
-        <h2 class="-dk-autor-block__caption--font-light
-                    __font-big
-                    __font-lighter
-                    __no-margin">
-          My Experiences
-        </h2>
-
-        <span class="-dk-autor-block__subcaption
-                      -dk-autor-block__subcaption--font-light
-                      __font-small
-                      __font-lighter">
-          Previous companies and tasks
-        </span>
-
-        <div class="-dk-autor-block__benefits">
-
-          <div class="-dk-autor-block__benefits-wrapper">
-            <span class="-dk-autor-block__icon
-                        -dk-autor-block__icon--color-light
-                        __font-large">
-              <i class="fas fa-laptop"></i>
+          <h2 class="-dk-page-title__title">
+            Hello, I am
+            <span class="-dk-page-title__title-sub-title">
+              Stimulus
             </span>
-
-            <span class="-dk-autor-block__list-caption
-                      __font-medium
-                      __font-lighter">
-              Graphic Designer
-            </span>
-
-            <span class="-dk-autor-block__date
-                        -dk-autor-block__date--font-dark
-                        __font-small
-                        __font-bolder">
-              2014 Jul - 2015 Sep
-            </span>
-          </div>
-          <p class="-dk-autor-block__text
-                    -dk-autor-block__text--font-light
-                    __font-normal 
-                    __no-margin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            currently based in New York city.
+          </h2>
+          <p class="-dk-page-title__text -dk-page-title__text_text-color">
+            Done auctor at efficitur lacinia. Prasesent bibendum efficitur ipsum, et mattis tellus
+            interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissm urna. Vestibulum id
+            accumsan quam.
           </p>
-        </div>
-
-        <div class="-dk-autor-block__benefits">
-
-          <div class="-dk-autor-block__benefits-wrapper">
-            <span class="-dk-autor-block__icon
-                    -dk-autor-block__icon--color-light
-                    __font-large">
-              <i class="fas fa-laptop"></i>
-            </span>
-
-            <span class="-dk-autor-block__list-caption
-                      __font-medium 
-                      __font-lighter">
-              Web Designer
-            </span>
-
-            <span class="-dk-autor-block__date
-                        -dk-autor-block__date--font-dark
-                        __font-small
-                        __font-bolder">
-              2015 Oct - 2017 Jan
-            </span>
-          </div>
-          <p class="-dk-autor-block__text
-                    -dk-autor-block__text--font-light
-                    __font-normal
-                    __no-margin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-
-      </div>
-    </section>
-    <!-- </Experience Section> -->
-
-    <!-- <Education Section> -->
-    <section class="-dk-autor-block
-                    __horizontal-flex 
-                    __width-full" id="education">
-
-      <div class="-dk-autor-block__info
-                  -dk-autor-block__education-info--bg-light
-                  __vertical-flex
-                  __width-half">
-
-        <h2 class="-dk-autor-block__caption--font-light
-                    __font-medium
-                    __font-lighter
-                    __no-margin">
-          My Education
-        </h2>
-
-        <span class="-dk-autor-block__subcaption
-                      -dk-autor-block__subcaption--font-light
-                      __font-small
-                      __font-lighter">
-          In cursus orci non ipsum gravida dignissim
-        </span>
-
-        <div class="-dk-autor-block__benefits">
-
-          <div class="-dk-autor-block__benefits-wrapper">
-            <span class="-dk-autor-block__icon
-                        -dk-autor-block__icon--color-light
-                        __font-large">
-              <i class="fas fa-laptop"></i>
-            </span>
-
-            <span class="-dk-autor-block__list-caption
-                       __font-medium 
-                      __font-lighter">
-              Master in Designer
-            </span>
-
-            <span class="-dk-autor-block__date
-                        -dk-autor-block__date--font-light
-                        __font-small
-                        __font-bolder">
-              2012 Jan - 2014 May
-            </span>
-          </div>
-          <p class="-dk-autor-block__text
-                    -dk-autor-block__text--font-light
-                    __font-normal 
-                    __no-margin">
-            Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien
-            id orci ullamcorper dignissim eu in neque.
-          </p>
-        </div>
-
-        <div class="-dk-autor-block__benefits">
-
-          <div class="-dk-autor-block__benefits-wrapper">
-            <span class="-dk-autor-block__icon
-                      -dk-autor-block__icon--color-light
-                      __font-large">
-              <i class="fas fa-laptop"></i>
-            </span>
-
-            <span class="-dk-autor-block__list-caption
-                      __font-medium
-                      __font-lighter">
-              Bachelor of Arts
-            </span>
-
-            <span class="-dk-autor-block__date
-                        -dk-autor-block__date--font-light
-                        __font-small
-                        __font-bolder">
-              2008 May - 2011 Dec
-            </span>
-          </div>
-          <p class="-dk-autor-block__text
-                    -dk-autor-block__text--font-light 
-                    __font-normal
-                    __no-margin">
-            Orci varius natoque panatibus et magnis dis parturient montes, nascetur
-            ridiculus mus.
-          </p>
-        </div>
-
-      </div>
-      <div class="-dk-autor-block__education-image 
-                  __width-half">
-      </div>
-    </section>
-    <!-- </Education Section> -->
-
-    <!-- <Testimonal Section> -->
-    <section class="-dk-testimonal-section
-                    -dk-testimonal-section--bg-image
-                    __vertical-flex 
-                    __width-full" id="testimonal">
-
-      <div class="-dk-testimonal-section__icon
-                  -dk-testimonal-section__icon--font-light
-                  __font-big
-                  __delay-animation">
-
-        <i class="fas fa-star"></i>
-      </div>
-
-      <h2 class="-dk-testimonal-section__caption
-                  -dk-testimonal-section__caption--font-light
-                  __font-big
-                  __font-lighter">
-        Proin lobortis eu diam et facilisis. Fusce nisi nibh,
-        molestie in vestibulum quis, auctor et orci.
-      </h2>
-
-      <h6 class="-dk-testimonal-section__subcaption 
-                  -dk-testimonal-section__subcaption--font-dark
-                  __font-small
-                  __font-lighter">
-        Curabitur at pulvinar ante. Duis dui urna, facibus eget
-        felis eu, iaculis congue sem.
-      </h6>
-    </section>
-    <!-- </Testimonal Section> -->
-
-    <!-- <Contacts Section> -->
-    <section class="-dk-contacts-section 
-                    __horizontal-flex 
-                    __width-full" id="contact">
-      <!-- <Form> -->
-      <form class="-dk-form
-                  -dk-form--bg-light
-                  -dk-contacts-section__form 
-                  __width-half" action="#" method="POST">
-
-        <fieldset class="-dk-form__fieldset">
-
-          <legend class="-dk-form__legend 
-                          -dk-form__legend--font-light
-                          __font-big">
-            Say hello..
-          </legend>
-
-          <p class="-dk-form__text 
-                    -dk-form__text--font-light
-                    __font-normal">
-            Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.
-          </p>
-
-          <p>
-            <input type="text" class="-dk-form__input-field 
-                                      -dk-form__input-field--font-light
-                                      __font-normal
-                                      __delay-animation" placeholder="Your Name">
-          </p>
-
-          <p>
-            <input type="email" class="-dk-form__input-field 
-                                        -dk-form__input-field--font-light
-                                        __font-normal
-                                        __delay-animation" placeholder="Your Email">
-          </p>
-
-          <p>
-            <textarea class="-dk-form__input-area 
-                              -dk-form__input-area--font-light
-                              __font-normal
-                              __delay-animation" placeholder="Write your message"></textarea>
-          </p>
-
-          <button type="submit" class="-dk-form__button
-                                        __font-normal
-                                        __enabled-focus
-                                        __enabled-active
-                                        __hide-excess-text
-                                        __delay-animation">
-            Send
+          <button
+            class="-dk-page-button -dk-page-button_font-color -dk-page-button_font-decoration -dk-page-button_decoration dk-page-button_font-decoration -dk-page-title__button">
+            Get started
           </button>
-        </fieldset>
-      </form>
-      <!-- </Form> -->
+        </article>
+      </div>
+    </header>
 
-      <div class="-dk-contacts-section__img 
-                  __width-quarter">
+    <!-- <Main> -->
+    <main class="-dk-main -dk-page__main">
+      
+      <!-- <About Section> -->
+      <div class="-dk-about-section -dk-main__about-section" id="about">
+        <article class="-dk-about-section__article -dk-about-section__article_bg-white">
+          <h3
+            class="-dk-about-section__about-caption -dk-about-section__about-caption_font-decoration -dk-about-section__about-caption_text-color">
+            Donec auctor
+            <span
+              class="-dk-about-section__about-sub-caption -dk-about-section__about-sub-caption_font-decoration -dk-about-section__about-sub-caption_text-color">
+              Sed vulputate vitae diam quis bibendum
+            </span>
+          </h3>
+          <p class="-dk-about-section__text -dk-about-section__text_text-decoration -dk-about-section__text_text-color">
+            Phasellus vulputate tellus nec tortor varius elementium. Curabitur at
+            pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.
+            Maris convallis eros massa.
+          </p>
+          <p class="-dk-about-section__text -dk-about-section__text_text-decoration -dk-about-section__text_text-color">
+            Quisque viverra iaculis alicuam. Etiam volutpat, justo non aliquam bibendum,
+            sem nibh molis erat, quis porta odio at velit.
+          </p>
+        </article>
+
+        <div class="-dk-about-section__image"></div>
+
+        <!-- <Skills> -->
+        <article class="-dk-skills -dk-skills_bg-gold  -dk-about-section__skills">
+          <h2 class="-dk-skills__caption -dk-skills__caption_font-color -dk-skills__caption_font-decoration">
+            My Skills
+            <span
+              class="-dk-skills__sub-caption -dk-skills__sub-caption--font-color-light -dk-skills__skills-sub-caption_font-decoration">
+              Photoshop . HTML CSS JS . Web Design
+            </span>
+          </h2>
+
+          <!-- <Progress Bar> -->
+          <div class="-dk-progress-bar">
+              <div class="-dk-progress-bar__caption">
+                <span
+                  class="-dk-progress-bar__caption -dk-progress-bar__caption-skill_font-decoration -dk-progress-bar__caption-skill_font-color">
+                  Frontend Design
+                </span>
+                <span
+                  class="-dk-progress-bar__caption-percentage_font-decoration -dk-progress-bar__caption-percentage_font-color">
+                  90%
+                </span>
+              </div>
+              <hr class="-dk-progress-bar__line -dk-progress-bar__line_1">
+          </div>
+          <div class="-dk-progress-bar">
+              <div class="-dk-progress-bar__caption">
+                <span
+                  class="-dk-progress-bar__caption -dk-progress-bar__caption-skill_font-decoration -dk-progress-bar__caption-skill_font-color">
+                  Backend processing
+                </span>
+                <span
+                  class="-dk-progress-bar__caption-percentage_font-decoration -dk-progress-bar__caption-percentage_font-color">
+                  70%
+                </span>
+              </div>
+              <hr class="-dk-progress-bar__line -dk-progress-bar__line_2">
+          </div>
+          <div class="-dk-progress-bar">
+              <div class="-dk-progress-bar__caption">
+                <span
+                  class="-dk-progress-bar__caption -dk-progress-bar__caption-skill_font-decoration -dk-progress-bar__caption-skill_font-color">
+                  HTML & CSS3
+                </span>
+                <span
+                  class="-dk-progress-bar__caption-percentage_font-decoration -dk-progress-bar__caption-percentage_font-color">
+                  80%
+                </span>
+              </div>
+              <hr class="-dk-progress-bar__line -dk-progress-bar__line_3">
+          </div>
+        </article>
+
+        <!-- <Skills Description> -->
+          <div class="-dk-about-section__skill-description-wrapper">
+        <div class="-dk-skill-description -dk-about-section__skill-description -dk-skill-description_bg-for-design">
+          <div class="-dk-skill-description__icon -dk-skill-description__icon_font-color">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h2 class="-dk-skill-description__caption_font-decoration -dk-skill-description__caption_font-color">
+            Interface Design
+          </h2>
+          <p class="-dk-skill-description__text -dk-skill-description__text_text-color">
+            Phasellus vulputate tellus nec tortor varius elementum.
+            Curabitur at pulvinar.
+          </p>
+        </div>
+        <div class="-dk-skill-description -dk-about-section__skill-description -dk-skill-description_bg-for-media">
+          <div class="-dk-skill-description__icon -dk-skill-description__icon_font-color">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <h2 class="-dk-skill-description__caption_font-decoration -dk-skill-description__caption_font-color">
+            Media Strategy
+          </h2>
+          <p class="-dk-skill-description__text -dk-skill-description__text_text-color">
+            Phasellus vulputate tellus nec tortor varius elementum.
+            Curabitur at pulvinar.
+          </p>
+        </div>
+        <div class="-dk-skill-description -dk-about-section__skill-description -dk-skill-description_bg-for-mobile">
+          <div class="-dk-skill-description__icon -dk-skill-description__icon_font-color">
+            <i class="fas fa-table"></i>
+          </div>
+          <h2 class="-dk-skill-description__caption_font-decoration -dk-skill-description__caption_font-color">
+            Mobile App
+          </h2>
+          <p class="-dk-skill-description__text -dk-skill-description__text_text-color">
+            Mauris convallis eros massa, vitae euismod arcu tempus ut.
+            Quisque viverra iaculis.
+          </p>
+        </div>
+        <div class="-dk-skill-description -dk-about-section__skill-description -dk-skill-description_bg-for-coding ">
+
+          <div class="-dk-skill-description__icon -dk-skill-description__icon_font-color-dark">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="-dk-skill-description__caption_font-decoration -dk-skill-description__font-color-dark">
+            Coding
+          </h2>
+          <p class="-dk-skill-description__text -dk-skill-description__text_color-dark">
+            Mauris convallis eros massa, vitae euismod arcu tempus ut.
+            Quisque viverra iaculis.
+          </p>
+        </div>
+      </div>
       </div>
 
-      <div class="-dk-contacts
-                  -dk-contacts--bg-dark
-                  __width-quarter">
+      <!-- <Experience Section> -->
+      <section class="-dk-author-block  -dk-main__author-block" id="experiences">
+        <div class="-dk-author-block__experience-image"></div>
+        <div class="-dk-author-block__info -dk-author-block__experience-info_bg-light">
+          <h2 class="-dk-author-block__caption -dk-author-block__caption_font-light">
+            My Experiences
+          </h2>
+          <span class="-dk-author-block__sub-caption -dk-author-block__sub-caption_font-light">
+            Previous companies and tasks
+          </span>
+          <div class="-dk-author-block__benefits">
+            <div class="-dk-author-block__benefits-wrapper">
+              <span class="-dk-author-block__icon -dk-author-block__icon_color-light">
+                <i class="fas fa-laptop"></i>
+              </span>
+              <span class="-dk-author-block__skill-caption">
+                Graphic Designer
+              </span>
+              <span class="-dk-author-block__date -dk-author-block__date_font-dark">
+                2014 Jul - 2015 Sep
+              </span>
+            </div>
+            <p class="-dk-author-block__text -dk-author-block__text_font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="-dk-author-block__benefits">
+            <div class="-dk-author-block__benefits-wrapper">
+              <span class="-dk-author-block__icon -dk-author-block__icon_color-light">
+                <i class="fas fa-laptop"></i>
+              </span>
+              <span class="-dk-author-block__skill-caption">
+                Web Designer
+              </span>
+              <span class="-dk-author-block__date -dk-author-block__date_font-dark">
+                2015 Oct - 2017 Jan
+              </span>
+            </div>
+            <p class="-dk-author-block__text -dk-author-block__text_font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <h2 class="-dk-contacts__caption--font-light
-                    __font-big
-                    __font-lighter">
-          Visit my office
+      <!-- <Education Section> -->
+      <section class="-dk-author-block  -dk-main__author-block" id="education">
+        <div class="-dk-author-block__info -dk-author-block__education-info_bg-light">
+          <h2 class="-dk-author-block__caption -dk-author-block__caption_font-light">
+            My Education
+          </h2>
+          <span class="-dk-author-block__sub-caption -dk-author-block__sub-caption_font-light">
+            In cursus orci non ipsum gravida dignissim
+          </span>
+          <div class="-dk-author-block__benefits">
+            <div class="-dk-author-block__benefits-wrapper">
+              <span class="-dk-author-block__icon -dk-author-block__icon_color-light">
+                <i class="fas fa-laptop"></i>
+              </span>
+              <span class="-dk-author-block__skill-caption">
+                Master in Designer
+              </span>
+              <span class="-dk-author-block__date -dk-author-block__date_font-dark">
+                2012 Jan - 2014 May
+              </span>
+            </div>
+            <p class="-dk-author-block__text -dk-author-block__text_font-light">
+              Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien
+              id orci ullamcorper dignissim eu in neque.
+            </p>
+          </div>
+          <div class="-dk-author-block__benefits">
+            <div class="-dk-author-block__benefits-wrapper">
+              <span class="-dk-author-block__icon -dk-author-block__icon_color-light">
+                <i class="fas fa-laptop"></i>
+              </span>
+              <span class="-dk-author-block__skill-caption">
+                Bachelor of Arts
+              </span>
+              <span class="-dk-author-block__date -dk-author-block__date_font-dark">
+                2008 May - 2011 Dec
+              </span>
+            </div>
+            <p class="-dk-author-block__text -dk-author-block__text_font-light">
+              Orci varius natoque panatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
+            </p>
+          </div>
+        </div>
+        <div class="-dk-author-block__education-image"></div>
+      </section>
+
+      <!-- <Testimonial Section> -->
+      <section class="-dk-testimonial-section -dk-main__testimonial-section -dk-testimonial-section_bg-image"
+        id="testimonial">
+        <div class="-dk-testimonial-section__icon -dk-testimonial-section__icon_font-light">
+          <i class="fas fa-star"></i>
+        </div>
+        <h2 class="-dk-testimonial-section__caption -dk-testimonial-section__caption_font-light">
+          Proin lobortis eu diam et facilisis. Fusce nisi nibh,
+          molestie in vestibulum quis, auctor et orci.
         </h2>
+        <h6 class="-dk-testimonial-section__sub-caption -dk-testimonial-section__sub-caption_font-dark">
+          Curabitur at pulvinar ante. Duis dui urna, facibus eget
+          felis eu, iaculis congue sem.
+        </h6>
+      </section>
 
-        <address class="-dk-contacts__adress
-                        -dk-contacts__adress--font-dark
-                        __font-normal
-                        __delay-animation">
-          456 New Street 22000, New Your City, USA
-        </address>
+      <!-- <Contacts Section> -->
+      <section class="-dk-contacts-section -dk-main__contacts-section" id="contact">
 
-        <h2 class="-dk-contacts__subcaption--font-light
-                    __font-big
-                    __font-lighter">
-          Contact.
-        </h2>
+        <!-- <Form> -->
+        <form class="-dk-form -dk-contacts-section__form -dk-form_bg-light" action="#" method="POST">
+          <fieldset class="-dk-form__fieldset">
+            <legend class="-dk-form__legend -dk-form__legend_font-light">
+              Say hello..
+            </legend>
+            <p class="-dk-form__text -dk-form__text_font-light">
+              Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.
+            </p>
+            <p>
+              <input type="text" class="-dk-form__input-field -dk-form__input-field_font-light" placeholder="Your Name">
+            </p>
+            <p>
+              <input type="email" class="-dk-form__input-field -dk-form__input-field_font-light"
+                placeholder="Your Email">
+            </p>
+            <p>
+              <textarea class="-dk-form__input-area -dk-form__input-area_font-light"
+                placeholder="Write your message"></textarea>
+            </p>
+            <button type="submit" class="-dk-form-button -dk-form__button -dk-form-button_font-decoration">
+              Send
+            </button>
+          </fieldset>
+        </form>
 
-        <p>
-          <span class="-dk-contacts__icon
-                        -dk-contacts__icon--font-dark
-                        __font-normal">
-            <i class="fas fa-phone"></i>
-          </span>
+        <!-- <Contacts> -->
+        <div class="-dk-contacts-section__img"></div>
 
-          <a class="-dk-contacts__link
-                    -dk-contacts__link--font-dark
-                    __font-normal
-                    __delay-animation
-                    __default-link" href="tel:+0101100220" target="_blank">
-            01-0110-0220
-          </a>
-        </p>
+        <div class="-dk-contacts-section__contacts -dk-contacts-section__contacts_bg-dark">
+          <h2 class="-dk-contacts-section__caption -dk-contacts-section__caption_font-light">
+            Visit my office
+          </h2>
+          <address class="-dk-contacts-section__address -dk-contacts-section__address_font-dark">
+            456 New Street 22000, New Your City, USA
+          </address>
+          <h2 class="-dk-contacts-section__sub-caption -dk-contacts-section__sub-caption_font-light">
+            Contact.
+          </h2>
+          <p>
+            <span class="-dk-contacts-section__icon -dk-contacts-section__icon_font-dark">
+              <i class="fas fa-phone"></i>
+            </span>
+            <a class="-dk-contacts-section__link -dk-contacts-section__link_font-dark" href="tel:+0101100220"
+              target="_blank">
+              01-0110-0220
+            </a>
+          </p>
+          <p>
+            <span class="-dk-contacts-section__icon -dk-contacts-section__icon_font-dark">
+              <i class="far fa-envelope"></i>
+            </span>
+            <a class="-dk-contacts-section__link -dk-contacts-section__icon_fix-padding -dk-contacts-section__link_color-light"
+              href="mailto:hello@company.co" target="_blank">
+              hello@company.co
+            </a>
+          </p>
+          <p>
+            <span class="-dk-contacts-section__icon -dk-contacts-section__address_font-dark">
+              <i class="fas fa-globe"></i>
+            </span>
+            <a class="-dk-contacts-section__link -dk-contacts-section__link_color-light" href="http://company.co"
+              target="_blank">
+              company.co
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
 
-        <p>
-          <span class="-dk-contacts__icon
-                        -dk-contacts__icon--font-dark
-                        __font-normal">
-            <i class="far fa-envelope"></i>
-          </span>
-
-          <a class="-dk-contacts__link 
-                    -dk-contacts__link--color-light
-                      __font-normal 
-                      __delay-animation
-                      __default-link" href="mailto:hello@company.co" target="_blank">
-            hello@company.co
-          </a>
-        </p>
-
-        <p>
-          <span class="-dk-contacts__icon
-                        -dk-contacts__icon--font-dark
-                        __font-normal">
-            <i class="fas fa-globe"></i>
-          </span>
-
-          <a class="-dk-contacts__link 
-                    -dk-contacts__link--color-light
-                    __font-normal
-                    __delay-animation
-                    __default-link" href="http://company.co" target="_blank">
-            company.co
-          </a>
-        </p>
-      </div>
-    </section>
-    <!-- </Contacts Section> -->
-  </main>
-
-  <!-- <Footer> -->
-  <footer class="-dk-footer 
-                  -dk-footer--bg-light 
-                  __vertical-flex">
-
-    <p class="-dk-footer__text
-              __font-light
-              __font-normal">
-      Copyright &copy; 2016 Your Company | Design:
-      <a href="https://www.wix.com/website/templates/html/design" class="-dk-footer__link--color-light
-                                                                          __font-mednium
-                                                                          __default-link
-                                                                          __delay-animation" target="_blank">
-        templatemo
-      </a>
-    </p>
-
-    <nav class="-dk-footer__navigation
-                __horizontal-flex 
-                __no-margin">
-
-      <ul class="-dk-footer__list 
-                __default-list
-                __horizontal-flex 
-                __no-margin">
-
-        <li class="-dk-footer__item">
-          <a href="https://www.facebook.com/" class="-dk-footer__link
-                                                      __font-normal
-                                                      __font-light
-                                                      __enabled-focus
-                                                      __delay-animation
-                                                      __default-link" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-
-        <li class="-dk-footer__item">
-          <a href="https://twitter.com/" class="-dk-footer__link 
-                                                __font-normal
-                                                __font-light
-                                                __enabled-focus
-                                                __delay-animation
-                                                __default-link" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-
-        <li class="-dk-footer__item">
-          <a href="https://plus.google.com/" class="-dk-footer__link 
-                                                    __font-normal
-                                                    __font-light
-                                                    __enabled-focus
-                                                    __delay-animation
-                                                    __default-link" target="_blank">
-            <i class="fab fa-google-plus-g"></i>
-          </a>
-        </li>
-
-        <li class="-dk-footer__item">
-          <a href="https://vk.com/" class="-dk-footer__link
-                                          __font-normal
-                                          __font-light
-                                          __enabled-focus
-                                          __delay-animation
-                                          __default-link" target="_blank">
-            <i class="fab fa-vk"></i>
-          </a>
-        </li>
-
-        <li class="-dk-footer__item">
-          <a href="https://www.linkedin.com/" class="-dk-footer__link
-                                                    __font-normal 
-                                                    __font-light
-                                                    __enabled-focus
-                                                    __delay-animation
-                                                    __default-link" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-  <!-- </Footer> -->
-
+    <!-- <Footer> -->
+    <footer class="-dk-footer -dk-page__footer -dk-footer_bg-light">
+      <p class="-dk-footer__text ">
+        Copyright &copy; 2016 Your Company | Design:
+        <a class="-dk-footer__link" target="_blank" href="https://www.wix.com/website/templates/html/design">
+          templatemo
+        </a>
+      </p>
+      <nav class="-dk-footer__navigation">
+        <ul class="-dk-footer__list ">
+          <li class="-dk-footer__item">
+            <a class="-dk-footer__link-icon" target="_blank" href="https://www.facebook.com/">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="-dk-footer__item">
+            <a class="-dk-footer__link-icon" target="_blank" href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="-dk-footer__item">
+            <a class="-dk-footer__link-icon" target="_blank" href="https://plus.google.com/">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+          <li class="-dk-footer__item">
+            <a class="-dk-footer__link-icon" target="_blank" href="https://vk.com/">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+          <li class="-dk-footer__item">
+            <a class="-dk-footer__link-icon" target="_blank" href="https://www.linkedin.com/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>

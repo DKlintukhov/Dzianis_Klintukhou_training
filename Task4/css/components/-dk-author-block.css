@@ -1,0 +1,103 @@
+.-dk-author-block__info,
+.-dk-author-block {
+  box-sizing: border-box;
+}
+
+.-dk-author-block__education-image,
+.-dk-author-block__info,
+.-dk-author-block__experience-image {
+  width: 50%;
+  height: 24rem;
+}
+
+.-dk-author-block__experience-image {
+  background: url("../../assets/images/experience-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-author-block__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2rem 2rem;
+}
+
+.-dk-author-block__caption {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.-dk-author-block__sub-caption {
+  display: inline-block;
+  padding-top: 1rem;
+  font-size: .9rem;
+  font-weight: normal;
+}
+
+.-dk-author-block__experience-info_bg-light {
+  background-color: #E9714C;
+}
+
+.-dk-author-block__icon_color-light,
+.-dk-author-block__sub-caption_font-light,
+.-dk-author-block__text_font-light,
+.-dk-author-block__caption_font-light,
+.-dk-author-block__skill-caption {
+  color: #FFFFFB;
+}
+
+.-dk-author-block__benefits {
+  padding: 1rem 0;
+}
+
+.-dk-author-block__icon {
+  display: inline-block;
+  margin: -.5rem .5rem 0 0;
+  font-size: 3rem;
+}
+
+.-dk-author-block__skill-caption {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.-dk-author-block__date {
+  display: inline-block;
+  margin: .6rem 0 0 .2rem;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.-dk-author-block__date_font-dark {
+  color: #5D2E36;
+}
+
+.-dk-author-block__date_font-light {
+  color: #897435;
+}
+
+.-dk-author-block__text {
+  padding-top: .5rem;
+  padding-left: 3.7rem;
+  margin: 0;
+  font-size: 1rem;
+  align-self: flex-end;
+}
+
+.-dk-author-block__education-image {
+  background: url("../../assets/images/education-img.jpg") center;
+  background-size: cover;
+}
+
+.-dk-author-block__education-info_bg-light {
+  background-color: #E4AE58;
+}
+
+.-dk-author-block__benefits-wrapper {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
