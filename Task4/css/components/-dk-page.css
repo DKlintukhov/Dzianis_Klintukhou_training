@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.-dk-page {
+  min-width: 300px;
+  font-family: "Source Sans", "Font Awesome", sans-serif;
+}
+
+.-dk-page__footer,
+.-dk-page__header,
+.-dk-page__main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.-dk-page__footer {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  padding: 3rem 2rem 5rem;
+}
+

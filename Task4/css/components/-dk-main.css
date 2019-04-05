@@ -1,0 +1,23 @@
+.-dk-main {
+  box-sizing: border-box;
+}
+
+.-dk-main__testimonial-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  z-index: 0;
+  padding: 1rem 2rem;
+}
+
+.-dk-main__about-section,
+.-dk-main__author-block,
+.-dk-main__contacts-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+.-dk-page-button {
+  transition: all linear .3s;
+}
+
+.-dk-page-button_decoration {
+  background: #F0E2D7;
+  border: 3px solid #262A29;
+}
+
+.-dk-page-button_font-decoration {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-dk-page-button_font-color {
+  color: #252B29;
+}
+
+.-dk-page-button:hover,
+.-dk-page-button:focus {
+  cursor: pointer;
+  background: #E1B97C;
+  outline: none;
+}
+
+.-dk-page-button:active {
+  transform: scale(1.2);
+}

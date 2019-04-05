@@ -1,0 +1,83 @@
+.-dk-about-section,
+.-dk-about-section__article {
+  box-sizing: border-box;
+}
+
+.-dk-about-section__article {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 22rem;
+  padding: 0 2rem 2rem;
+}
+
+.-dk-about-section__about-caption {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.-dk-about-section__about-caption_font-decoration {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-dk-about-section__about-caption_text-color {
+  color: #3D393A;
+}
+
+.-dk-about-section__article_bg-white {
+  background-color: #fff;
+}
+
+.-dk-about-section__about-sub-caption {
+  display: block;
+  padding-top: 1rem;
+}
+
+.-dk-about-section__about-sub-caption_font-decoration {
+  font-size: .9rem;
+}
+
+.-dk-about-section__about-sub-caption_text-color {
+  color: #E4AE58
+}
+
+.-dk-about-section__text {
+  line-height: 1.5; 
+}
+
+.-dk-about-section__text_text-decoration {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-dk-about-section__text_text-color {
+  color: #989D96;
+}
+
+.-dk-about-section__image {
+  background: url("../../assets/images/about-img.jpg") 50% 5%;
+}
+
+.-dk-about-section__skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 2.5rem;
+}
+
+.-dk-about-section__skill-description {
+  padding: 2rem 1rem 3rem;
+  flex-wrap: wrap-reverse;
+}
+
+.-dk-about-section__image,
+.-dk-about-section__skill-description,
+.-dk-about-section__skills {
+  width: 25%;
+  height: 22rem;
+}

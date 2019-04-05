@@ -1,0 +1,38 @@
+.-dk-page-title__sub-title {
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.-dk-page-title__sub-title_text-color {
+  color: #B1A9B8;
+}
+
+.-dk-page-title__title {
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+.-dk-page-title__title-sub-title {
+  font-weight: 500;
+}
+
+.-dk-page-title__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-dk-page-title__text_text-color {
+  color: #B1A9B8;
+}
+
+.-dk-page-title__button {
+  width: 10rem;
+  border-radius: 1.5rem;
+  height: 2.7rem;
+  margin-top:  3rem;
+}

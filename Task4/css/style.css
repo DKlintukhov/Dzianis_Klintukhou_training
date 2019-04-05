@@ -1,33 +1,30 @@
 @import "./fonts.css";
 @import "../assets/fonts/fontAwesome/all.css";
 
-@import "./components/header.css";
-@import "./components/mobile-menu.css";
-@import "./components/logo.css";
-@import "./components/navigation.css";
-@import "./components/main.css";
-@import "./components/about-section.css";
-@import "./components/progress-bar.css";
-@import "./components/skill-description.css";
-@import "./components/author-block.css";
-@import "./components/testimonal-section.css";
-@import "./components/form.css";
-@import "./components/contacts-section.css";
-@import "./components/footer.css";
-@import "./components/hamburger-button.css";
+@import "./normalize.css";
 
-@import "./mixins/font-mixins.css";
-@import "./mixins/grid-mixins.css";
-@import "./mixins/reset-mixins.css";
+@import "./components/-dk-page.css";
+@import "./components/-dk-header.css";
+@import "./components/-dk-page-info-section.css";
+@import "./components/-dk-page-title.css";
+@import "./components/-dk-page-button.css";
+@import "./components/-dk-mobile-navigation.css";
+@import "./components/-dk-navigation.css";
+@import "./components/-dk-main.css";
+@import "./components/-dk-about-section.css";
+@import "./components/-dk-skills.css";
+@import "./components/-dk-progress-bar.css";
+@import "./components/-dk-skill-description.css";
+@import "./components/-dk-author-block.css";
+@import "./components/-dk-testimonial-section.css";
+@import "./components/-dk-form.css";
+@import "./components/-dk-form-button.css";
+@import "./components/-dk-contacts-section.css";
+@import "./components/-dk-footer.css";
+@import "./components/-dk-hamburger-button.css";
 
 @import "./fix-ie11.css";
 
 @import "./media-quaries.css";
+@import "./media-quaries-mobile.css";
 
-.page {
-  font-family: "Source Sans", "Font Awesome", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}

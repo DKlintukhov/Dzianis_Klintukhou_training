@@ -1,9 +1,8 @@
 .-dk-form {
   box-sizing: border-box;
-  padding: 1rem;
 }
 
-.-dk-form--bg-light {
+.-dk-form_bg-light {
   background-color: #E9714C;
 }
 
@@ -11,14 +10,36 @@
   border: none;
 }
 
-.-dk-form__input-area--font-light,
-.-dk-form__button:hover,
-.-dk-form__button:active,
+.-dk-form__legend {
+  font-size: 2.5rem;
+}
+
+.-dk-form__text {
+  padding: 0 0 2rem;
+}
+
+.-dk-form__input-field {
+  margin: 0 0 1rem;
+}
+
+.-dk-form__input-area,
+.-dk-form__input-field,
+.-dk-form__text {
+  font-size: 1rem;
+}
+
+.-dk-form__input-area,
+.-dk-form__input-field,
+.-dk-form__text {
+  transition: all linear .3s;
+}
+
+.-dk-form__input-area_font-light,
 .-dk-form__input-area::placeholder,
 .-dk-form__input-field::placeholder,
-.-dk-form__input-field--font-light,
-.-dk-form__text--font-light,
-.-dk-form__legend--font-light {
+.-dk-form__input-field_font-light,
+.-dk-form__text_font-light,
+.-dk-form__legend_font-light {
   color: #FFF;
 }
 
@@ -54,18 +75,7 @@
 }
 
 .-dk-form__button {
-  width: 25rem;
+  display: block;
+  width: 20rem;
   height: 3rem;
-  box-sizing: border-box;
-  border-radius: 1.5rem;
-  outline: none;
-  font-size: 1.2rem;
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-
-.-dk-form__button:hover,
-.-dk-form__button:active {
-  cursor: pointer;
-  background-color: #E9714C;
 }

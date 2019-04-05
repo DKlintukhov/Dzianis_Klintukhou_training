@@ -1,134 +1,185 @@
-@media screen and (min-width: 1025px) {
-  .-dk-header-mobile__navigation,
-  .-dk-hamburger-button,
-  .-dk-hamburger-button-close {
+@media screen and (max-width: 1366px) {
+  .-dk-header__radio-open,
+  .-dk-header__radio-close,
+  .-dk-header__hamburger-button-open,
+  .-dk-header__hamburger-button-close {
+    display: block;
+  }
+
+  .-dk-page-info-section__navigation {
     display: none;
+  }
+  
+  .-dk-header__logo {
+    padding-top: 1rem;
+    margin: auto;
   }
 }
 
-@media screen and (max-width: 1025px) {
-  .__horizontal-flex {
-    flex-wrap: wrap;
-  }
-
-  .__width-half {
+@media screen and (max-width: 1066px) {
+  .-dk-about-section__article {
     width: 100%;
+    text-align: center;
   }
 
-  .__width-quarter {
-    width: 50%;
-  } 
-
-  .-dk-autor-block .__width-half {
+  .-dk-about-section__skills,
+  .-dk-about-section__image {
     width: 50%;
   }
-  
-  .-dk-autor-block .__width-half {
-    width: 100%;
+
+  .-dk-about-section__image {
+    background: url("../../assets/images/about-img.jpg") 50% 15%;
   }
 
-  .-dk-header  {
+  .-dk-page-info-section__page-title {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .-dk-page-info-section__page-title {
+    padding: 3rem 1rem;
+  }
+
+  .-dk-about-section__article {
     height: auto;
   }
 
-  .-dk-header__image-block {
-    height: 35rem;
+  .-dk-testimonial-section__sub-caption,
+  .-dk-testimonial-section__caption {
+    margin: 1rem 0;
   }
 
-  .-dk-header__description {
-    padding: 0;
-    text-align: center;
+  .-dk-testimonial-section__caption {
+    font-size: 2rem;
   }
 
-  .-dk-header__button {
-    margin: 0;
-  }
-
-  .-dk-navigation {
-    margin: auto;
-  }
-
-  .-dk-progress-bar {
-    width: 90%;
-    margin: auto;
-  }
-
-  .-dk-about__skills {
-    text-align: center;
-  }
-
-  .__width-quarter {
-    width: 100%;
-  }
-
-  .-dk-form__button {
-    width: 15rem;
-    height: 2rem;
-  }
-
-  .-dk-testimonal-section__caption {
-    width: 100%;
-    font-size: 1.5rem;
-  }
-
-  .-dk-testimonal-section__subcaption {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .-dk-contacts-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .-dk-header__navigation {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 870px) {
-
-  .-dk-autor-block__benefits-wrapper,
-  .-dk-autor-block {
-    text-align: center;
-  }
-
-  .-dk-skill-description {
-    display: flex;
+  .-dk-about-section__skill-description {
     flex-wrap: wrap-reverse;
+    width: 50%;
   }
 
-  .-dk-form__button {
-    display: block;
-    margin: auto;
+  .-dk-main__author-block {
+    flex-wrap: wrap;
+    text-align: center;
   }
 
-  .-dk-testimonal-section__subcaption,
-  .-dk-testimonal-section__caption {
+  .-dk-testimonial-section__sub-caption,
+  .-dk-testimonial-section__caption,
+  .-dk-contacts-section__form,
+  .-dk-author-block__education-image,
+  .-dk-author-block__experience-image,
+  .-dk-author-block__info {
     width: 100%;
   }
 
-  .-dk-contacts {
-    padding: 3rem 3rem;
+  .-dk-form__button {
+    width: 30rem;
+    margin: auto;
   }
 
-  .-dk-autor-block__benefits-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .-dk-author-block__education-image {
+    order: -1;
   }
 
-  .-dk-autor-block__text {
-    padding: 0;
+  .-dk-author-block__benefits-wrapper {
+    justify-content: center;
   }
 
-  .-dk-header__button {
-    margin: 0;
+  .-dk-contacts-section__contacts,
+  .-dk-contacts-section__img {
+    width: 50%;
   }
 }
 
 
+@media screen and (max-width: 632px) {
+  .-dk-header__image-block {
+    height: 50vh;
+  }
 
+  .-dk-header__info-section {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .-dk-page-info-section__page-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .-dk-page-title__button {
+    width: 15rem;
+    margin-top: 0;
+  }
+
+  .-dk-page-title__subtitle {
+    padding: 0;
+  }
+
+  .-dk-contacts-section__contacts {
+    padding-left: 3rem;
+  }
+
+  .-dk-header__image-block,
+  .-dk-header__info-section,
+  .-dk-contacts-section__contacts,
+  .-dk-contacts-section__img,
+  .-dk-about-section__skill-description,
+  .-dk-about-section__skills,
+  .-dk-about-section__image {
+    width: 100%;
+  }
+
+  .-dk-form__button {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .-dk-header__image-block {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .-dk-main__author-block,
+  .-dk-main__testimonial-section,
+  .-dk-about-section__article {
+    justify-content: center;
+  }
+
+  .-dk-main__testimonial-section,
+  .-dk-about-section__article,
+  .-dk-header__info-section,
+  .-dk-author-block__info {
+    height: auto;
+  }
+
+  .-dk-header__info-section {
+    padding: 2rem;
+  }
+
+  .-dk-author-block__text {
+    padding: 1rem 0;
+  }
+
+  .-dk-contacts-section__form {
+    padding: 1rem 0;
+  }
+
+  .-dk-form__button {
+    width: 90%;
+  }
+
+  .-dk-page__button {
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  .-dk-footer__list {
+    width: 15rem;
+  }
+}
 
 

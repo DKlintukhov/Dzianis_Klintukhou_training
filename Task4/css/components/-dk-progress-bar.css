@@ -1,0 +1,56 @@
+.-dk-progress-bar,
+.-dk-progress-bar__line_1::after,
+.-dk-progress-bar__line_2::after,
+.-dk-progress-bar__line_3::after {
+  box-sizing: border-box;
+}
+
+.-dk-progress-bar__caption  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.-dk-progress-bar__caption-skill_font-color {
+  color: #233038;
+}
+
+.-dk-progress-bar__caption-percentage_font-decoration,
+.-dk-progress-bar__caption-skill_font-decoration {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.-dk-progress-bar__caption-percentage_font-color {
+  color: #FEFFFF;
+}
+
+.-dk-progress-bar__line {
+  border: 1px solid #233038;
+}
+
+.-dk-progress-bar__line_1::after,
+.-dk-progress-bar__line_2::after,
+.-dk-progress-bar__line_3::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  bottom: 1px;
+  background-color: #FEFFFF;
+  border: 1px solid #FEFFFF;
+}
+
+.-dk-progress-bar__line_1::after {
+  left: 90%;
+  width: 11%;
+}
+
+.-dk-progress-bar__line_2::after {
+  left: 70%;
+  width: 31%;
+}
+
+.-dk-progress-bar__line_3::after {
+  left: 80%;
+  width: 21%;
+}

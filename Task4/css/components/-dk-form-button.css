@@ -1,0 +1,30 @@
+.-dk-form-button {
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: all linear .3s;
+}
+
+.-dk-form-button_font-decoration {
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-dk-form__button:hover {
+  cursor: pointer;
+  background-color: #E9714C;
+}
+
+.-dk-form-button:focus,
+.-dk-form-button:hover {
+  cursor: pointer;
+  color: #FFF;
+  outline: none;
+}
+
+.-dk-form__button:active {
+  transform: scale(1.2);
+}
