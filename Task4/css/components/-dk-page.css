@@ -3,7 +3,9 @@ html {
 }
 
 .-dk-page {
+  font-size: 1rem;
   min-width: 300px;
+  max-width: 4000px;
   font-family: "Source Sans", "Font Awesome", sans-serif;
 }
 
@@ -22,4 +24,3 @@ html {
   height: auto;
   padding: 3rem 2rem 5rem;
 }
-

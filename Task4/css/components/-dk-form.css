@@ -61,6 +61,8 @@
   box-sizing: border-box;
   border-bottom: 2px solid #E5AB57;
   background-color: transparent;
+  resize: vertical; 
+  max-height: 190px;
 }
 
 .-dk-form__input-area::placeholder,
