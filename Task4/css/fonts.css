@@ -35,6 +35,12 @@
 }
 
 @font-face {
+  font-family: "Source Sans";
+  src: url("../assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf");
+  font-weight: 600;
+}
+
+@font-face {
   font-family: "Font Awesome";
   src: url("../assets/fonts/fontAwesome/webfonts/fontawesome-webfont.eot");
   src:

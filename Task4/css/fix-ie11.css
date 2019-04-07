@@ -1,4 +1,12 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .-dk-page-title__title-sub-title {
+    font-weight: 600;
+  }
+
+  .-dk-page {
+    font-weight: 200;
+  }
+
   .-dk-testimonial-section::after {
     left: 0;
     top: 0;

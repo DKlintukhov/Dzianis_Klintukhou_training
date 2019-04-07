@@ -1,62 +1,117 @@
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .-dk-header__radio-open,
-    .-dk-header__radio-close,
-    .-dk-header__hamburger-button-open,
-    .-dk-header__hamburger-button-close {
-      display: block;
-    }
-    .-dk-page-info-section__navigation {
-      display: none;
-    }
+@media screen and (max-width: 1024px) {
+  .-dk-header__radio-open,
+  .-dk-header__radio-close,
+  .-dk-header__hamburger-button-open,
+  .-dk-header__hamburger-button-close {
+    display: block;
+  }
+
+  .-dk-page-info-section__navigation {
+    display: none;
+  }
+
+  .-dk-about-section__article {
+    width: 100%;
+    text-align: center;
+  }
+
+  .-dk-about-section__skills,
+  .-dk-about-section__image {
+    width: 50%;
+  }
+
+  .-dk-about-section__image {
+    background-position: 50% 15%;
+  }
 }
 
-@media only screen and (max-device-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .-dk-about-section__skill-description {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .-dk-header__image-block,
+  .-dk-header__info-section,
+  .-dk-contacts-section__form,
+  .-dk-author-block__education-image,
+  .-dk-author-block__experience-image,
+  .-dk-author-block__info {
+    width: 100%;
+  }
+  
+  .-dk-author-block__info {
+    text-align: center;
+  }
+
+  .-dk-author-block__benefits-wrapper {
+    justify-content: center;
+  }
+
+  .-dk-contacts-section__img,
+  .-dk-contacts-section__contacts {
+    width: 50%;
+  }
+
+  .-dk-testimonial-section__caption {
+    width: 90%;
+  }
+
+  .-dk-form__button {
+    margin: auto;
+    width: 70%;
+  }
+
+  .-dk-header__image-block {
+    height: 60vh;
+  }
+
+  .-dk-header__info-section {
+    height: 40vh;
+    text-align: center;
+  }
+
   .-dk-page-info-section__page-title {
-    padding: 0;
-  }
-
-  .-dk-page-title__button {
-    margin: 0;
-  } 
-}
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 640px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .-dk-header__image-block {
-      width: 100%;
-      height: 100vh;
-    }
-
-    .-dk-header__info-section {
-      width: 100%;
-      height: auto;
-      padding: 1rem;
-    }
-
-    .-dk-header__logo {
-      padding-left: 3rem;
+    padding-top: 1rem;
   }
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .-dk-header__image-block {
-      width: 100%;
-      height: 50vh;
-    }
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
 
-    .-dk-header__info-section {
-      width: 100%;
-      height: auto;
-      padding: 1rem;
-      text-align: center;
-    }
+  .-dk-about-section__skills,
+  .-dk-about-section__image,
+  .-dk-about-section__skill-description,
+  .-dk-contacts-section__img,
+  .-dk-contacts-section__contacts {
+    width: 100%;
+  }
+
+  .-dk-contacts-section__contacts {
+    padding-left: 5rem;
+  }
+
+  .-dk-author-block__benefits-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 960px) {
+  .-dk-header__image-block {
+    height: 100vh;
+  }
+
+  .-dk-header__info-section {
+    height: auto;
+  }
+
+  html {
+    font-size: 11px;
+  }
 }

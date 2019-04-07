@@ -22,9 +22,3 @@
 @import "./components/-dk-contacts-section.css";
 @import "./components/-dk-footer.css";
 @import "./components/-dk-hamburger-button.css";
-
-@import "./fix-ie11.css";
-
-@import "./media-quaries.css";
-@import "./media-quaries-mobile.css";
-

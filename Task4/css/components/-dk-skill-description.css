@@ -60,6 +60,7 @@
 }
 
 .-dk-about-section__skill-description-wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
 }

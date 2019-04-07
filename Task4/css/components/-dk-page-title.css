@@ -9,7 +9,7 @@
 }
 
 .-dk-page-title__title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: normal;
   padding: 1rem 0 0 0;
   margin: 0;
@@ -34,5 +34,5 @@
   width: 10rem;
   border-radius: 1.5rem;
   height: 2.7rem;
-  margin-top:  3rem;
+  margin-top: 3rem;
 }

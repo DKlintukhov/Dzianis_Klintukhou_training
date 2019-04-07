@@ -1,4 +1,4 @@
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1300px) {
   .-dk-header__radio-open,
   .-dk-header__radio-close,
   .-dk-header__hamburger-button-open,
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 1066px) {
+@media screen and (max-width: 1200px) {
   .-dk-about-section__article {
     width: 100%;
     text-align: center;
@@ -28,7 +28,7 @@
   }
 
   .-dk-about-section__image {
-    background: url("../../assets/images/about-img.jpg") 50% 15%;
+    background-position: 50% 15%;
   }
 
   .-dk-page-info-section__page-title {
@@ -92,10 +92,9 @@
   }
 }
 
-
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 700px) {
   .-dk-header__image-block {
-    height: 50vh;
+    height: 100vh;
   }
 
   .-dk-header__info-section {
@@ -182,4 +181,44 @@
   }
 }
 
+@media screen and (min-width: 3000px) {
+  html {
+    font-size: 32px;
+  }
+}
 
+@media screen and (min-width: 2500px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 960px) {
+  html {
+    font-size: 11px;
+  }
+}
