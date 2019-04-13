@@ -1,22 +1,34 @@
+// проверка диапозона
+function isCorrectRange(num) {
+	if(num > 255) {
+		num = 255;
+		return num;
+	} 
+	else if(num < 0) {
+		num = 0;
+		return num;
+	} 
+	else {
+		return num;
+	}
+}
+
 // 255.toString(16) == 0, по условию нужно 00
 function isSingle(num) {
 
 	// проверка на длину строки, если 1, то конкатенирием 0
-	if(num.toString(16).length === 1) return (0 + num.toString(16)).toUpperCase();
-	return num.toString(16);
+	if(num.toString(16).length === 1) 
+		return (0 + num.toString(16)).toUpperCase();
+	else
+		return num.toString(16).toUpperCase();
 }
 
 function rgb(r, g, b){
 	// проверка на диапозон значений
-	if(r > 255) r = 255;
-	if(g > 255) g = 255;
-	if(b > 255) b = 255;
-	if(r < 0) r = 0;
-	if(g < 0) g = 0;
-	if(b < 0) b = 0;
+	r = isCorrectRange(r);
+	g = isCorrectRange(g);
+	b = isCorrectRange(b);
 
 	// возвращаем в верхнем регистре
-	return isSingle(r).toUpperCase() + 
-	isSingle(g).toUpperCase() + 
-	isSingle(b).toUpperCase();
+	return isSingle(r) + isSingle(g) + isSingle(b);
 }

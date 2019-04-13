@@ -22,7 +22,7 @@ function findUnique(numbers) {
 		if(numbers[i] < numbers[i + 1]) return numbers[i];
 
 		// с конца
-		if(numbers[k] < numbers[k - 1]) return numbers[k];
+		if(numbers[k] !== numbers[k - 1]) return numbers[k];
 
 		else {
 
