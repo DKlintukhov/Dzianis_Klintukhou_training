@@ -3,58 +3,61 @@ function Vehicle(speed, maxSpeed) {
     this.speed = speed;
     this.maxSpeed = maxSpeed;
 
-      // добавить скорость
-  this.addSpeed = function(km) {
-    if(km < 0) km = 0;
-    if(km > this.maxSpeed) km = this.maxSpeed;
-    this.speed += km;
-    if(this.speed > this.maxSpeed) {
-      this.speed = this.maxSpeed;
+    // добавить скорость
+    this.addSpeed = function (km) {
+        this.speed = Math.min((this.speed += km), this.maxSpeed);
+        return this.speed;
     }
-  }
 
-  // сбросить скорость
-  this.brake = function(km) {
-    if(km < 0) km = 0;
-    if(km > this.maxSpeed) km = this.maxSpeed;
-    this.speed -= km;
-  }
+    // сбросить скорость
+    this.brake = function (km) {
+        this.speed = Math.max((this.speed - km), 0);
+        return this.speed;
+    }
 
-  // остановиться
-  this.stop = function() {
-    this.speed = 0;
-  }
+    // остановиться
+    this.stop = function () {
+        this.speed = 0;
+    }
 
-  // статус движения
-  this.status = function() {
-    console.log(`The speed is a ${this.speed}km`);
-  }
+    // статус движения
+    this.status = function () {
+        console.log(`The speed is a ${this.speed}km`);
+    }
 }
 
 function Car(speed, maxSpeed) {
 
-  // наследуемся
-  Vehicle.call(this, speed, maxSpeed);
+    // наследуемся
+    Vehicle.call(this, speed, maxSpeed);
 
-  // полиморфим status
-  this.getStatus = function() {
-      this.status();
-      if(this.speed > 0) console.log(`The Car is moving...`);
-      else console.log("Isn't moving");
+    // полиморфим status
+    this.getStatus = function () {
+        this.status();
+        if (this.speed > 0) {
+            console.log(`The Car is moving...`);
+        }
+        else {
+            console.log("Isn't moving");
+        }
     }
 }
 
-function Plane(speed, maxSpeed)  {
+function Plane(speed, maxSpeed) {
 
-  // наследуемся
-  Vehicle.call(this, speed, maxSpeed);
-  
-  // полиморфим status
-  this.getStatus = function() {
-    this.status();
-    if(this.speed > 0) console.log(`The plane is flying...`);
-    else console.log("Isn't flying");
-  }
+    // наследуемся
+    Vehicle.call(this, speed, maxSpeed);
+
+    // полиморфим status
+    this.getStatus = function () {
+        this.status();
+        if (this.speed > 0) {
+            console.log(`The plane is flying...`);
+        }
+        else {
+            console.log("Isn't flying");
+        }
+    }
 }
 
 let Mersedes = new Car(90, 200);

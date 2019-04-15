@@ -1,7 +1,7 @@
 // функция для наследования 
 function inherit(child, parent) {
-  child.prototype = Object.create(parent.prototype);
-  child.prototype.constructor = child;
+    child.prototype = Object.create(parent.prototype);
+    child.prototype.constructor = child;
 }
 
 // абстрактный класс
@@ -13,55 +13,54 @@ function Vehicle(speed, maxSpeed) {
 // добавляем методы в прототип Vehicle
 
 // статус движения
-Vehicle.prototype.status = function() {
-  console.log(`The speed is a ${this.speed}km`);
+Vehicle.prototype.status = function () {
+    console.log(`The speed is a ${this.speed}km`);
 }
 
 // остановиться
-Vehicle.prototype.stop = function() {
-  this.speed = 0;
+Vehicle.prototype.stop = function () {
+    this.speed = 0;
 }
 
 // сбросить скорость
-Vehicle.prototype.brake = function(km) {
-  if(km < 0) km = 0;
-  if(km > this.maxSpeed) km = this.maxSpeed;
-  this.speed -= km;
+Vehicle.prototype.brake = function (km) {
+    this.speed = Math.max((this.speed - km), 0);
+    return this.speed;
 }
 
 // добавить скорость
-Vehicle.prototype.addSpeed = function(km) {
-  if(km < 0) km = 0;
-  if(km > this.maxSpeed) km = this.maxSpeed;
-  this.speed += km;
-  if(this.speed > this.maxSpeed) {
-    this.speed = this.maxSpeed;
-  }
+Vehicle.prototype.addSpeed = function (km) {
+    this.speed = Math.min((this.speed += km), this.maxSpeed);
+    return this.speed;
 }
 
 
 function Car(speed, maxSpeed) {
-  this.speed = speed;
-  this.maxSpeed = maxSpeed;
+    this.speed = speed;
+    this.maxSpeed = maxSpeed;
 
-  // полиморфим status
-  this.getStatus = function() {
-      this.status();
-      if(this.speed > 0) console.log(`The Car is moving...`);
-      else console.log("Isn't moving");
+    // полиморфим status
+    this.getStatus = function () {
+        this.status();
+        if (this.speed > 0) {
+            console.log(`The Car is moving...`);
+        }
+        else {
+            console.log("Isn't moving");
+        }
     }
 }
 
-function Plane(speed, maxSpeed)  {
-  this.speed = speed;
-  this.maxSpeed = maxSpeed;
-  
-  // полиморфим status
-  this.getStatus = function() {
-    this.status();
-    if(this.speed > 0) console.log(`The plane is flying...`);
-    else console.log("Isn't flying");
-  }
+function Plane(speed, maxSpeed) {
+    this.speed = speed;
+    this.maxSpeed = maxSpeed;
+
+    // полиморфим status
+    this.getStatus = function () {
+        this.status();
+        if (this.speed > 0) console.log(`The plane is flying...`);
+        else console.log("Isn't flying");
+    }
 }
 
 // наследование...
