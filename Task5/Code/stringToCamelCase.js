@@ -1,42 +1,49 @@
 // проврка на букву в верхнем регистре
 function isLetterUpperCase(letter) {
-	if(letter.charCodeAt() >= 65 && letter.charCodeAt() <= 90) return true;
-	else return false;
+    let char = letter.charCodeAt();
+    if (char >= 65 && char <= 90) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 // проврка на букву в нижнем регистре
 function isLetterLowerCase(letter) {
-	if(letter.charCodeAt() >= 97 && letter.charCodeAt() <= 122) return true;
-	else return false;
+    let char = letter.charCodeAt();
+    if (char >= 97 && char <= 122) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
-function toCamelCase(str){
-	if(str.length === 0) return "";
-	
-	// добавление 0-терминатора для отслеживания конца строки
-	let strWithTerminator = str + 0;
-	let resStr = " ";
+function toCamelCase(str) {
+    if (str.length === 0) {
+        return "";
+    }
 
-	// последнего послдеднего вырезанного символа 
-	let index = 0;
+    // добавление 0-терминатора для отслеживания конца строки
+    let strWithTerminator = str + 0;
+    let resStr = " ";
 
-	for (let i = 0; i < strWithTerminator.length; i++) {
+    // index для послдеднего вырезанного символа 
+    for (let i = 0, index = 0; i < strWithTerminator.length; i++) {
 
-		// проверка на символ и на регистр в Unicode
-		if(isLetterUpperCase(strWithTerminator.charAt(i)) || isLetterLowerCase(strWithTerminator.charAt(i))) {
+        let char = strWithTerminator.charAt(i);
 
-			// если не символ, то продолжить
-			continue;
+        // проверка на символ и на регистр в Unicode
+        if (!(isLetterUpperCase(char) || isLetterLowerCase(char))) {
 
-		} else {
+            // вырезаем часть строки до символа
+            resStr += strWithTerminator.substr(index, i - index);
 
-			// вырезаем часть строки до символа
-			resStr += strWithTerminator.substr(index, i - index);
-
-			// прибавляем к строке букву в верхнем регистре
-			resStr += strWithTerminator.charAt(i + 1).toUpperCase();
-			index = i + 2;
-		}
-	}
-	return resStr.trim();
+            // прибавляем к строке букву в верхнем регистре
+            resStr += strWithTerminator.charAt(i + 1).toUpperCase();
+            index = i + 2;
+        }
+    }
+    return resStr.trim();
 }

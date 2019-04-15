@@ -1,34 +1,29 @@
 // найти уникальный элемент массива
 function findUnique(numbers) {
-	if(numbers.length === 1) return numbers[0];
+    if (numbers.length === 1) {
+        return numbers[0];
+    }
 
-	// сортировка
-	numbers.sort((a, b) => a - b);
+    numbers.sort((a, b) => a - b);
 
-	let arrLength = numbers.length - 1;
+    let arrLength = numbers.length - 1;
 
-	// проверка последнего элемента
-	if(numbers[arrLength] > numbers[arrLength-1]) return numbers[arrLength];
+    // проверка последнего элемента
+    if (numbers[arrLength] > numbers[arrLength - 1]) {
+        return numbers[arrLength];
+    }
 
-	// индекс с начала массива
-	let i = 0;
+    // i с начала массива, k с конца массива
+    for (let i = 0, k = arrLength; i <= arrLength; i += 2, k -= 2) {
 
-	// индекс с конца массива
-	let k = arrLength;
+        // от начала
+        if (numbers[i] < numbers[i + 1]) {
+            return numbers[i];
+        }
 
-	for(; i <= arrLength;) {
-
-		// от начала
-		if(numbers[i] < numbers[i + 1]) return numbers[i];
-
-		// с конца
-		if(numbers[k] !== numbers[k - 1]) return numbers[k];
-
-		else {
-
-			// шаги
-			i += 2;
-			k -= 2;
-		}
-	}
+        // с конца
+        if (numbers[k] !== numbers[k - 1]) {
+            return numbers[k];
+        }
+    }
 }
