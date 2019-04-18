@@ -130,29 +130,29 @@ _____-----|     ]              [ ||||||| ]              [     |
     }
 }
 
-const BigHouseMaster = new Director(new BigHouseBuilder());
-const SimpleHouseMaster = new Director(new SimpleHouseBuilder());
+const bigHouseMaster = new Director(new BigHouseBuilder());
+const simpleHouseMaster = new Director(new SimpleHouseBuilder());
 
-SimpleHouseMaster
+simpleHouseMaster
     .buildCascadeRoof()
     .buildFloorWithWindow()
     .buildFloorWithDoor();
-const SimpleHouse = SimpleHouseMaster.buildHouse();
-console.log(SimpleHouse);
+const simpleHouse = simpleHouseMaster.buildHouse();
+console.log(simpleHouse);
 
-BigHouseMaster
+bigHouseMaster
     .buildGableRoof()
     .buildFloorWithWindow()
     .buildFloorWithDoor();
-const BigHouse = BigHouseMaster.buildHouse();
-console.log(BigHouse);
+const bigHouse = bigHouseMaster.buildHouse();
+console.log(bigHouse);
 
-BigHouseMaster
+bigHouseMaster
     .destroyHouse()
     .buildCascadeRoof()
     .buildFloorWithDoor();
-const NewHouse = BigHouseMaster.buildHouse();
-console.log(NewHouse);
+const newHouse = bigHouseMaster.buildHouse();
+console.log(newHouse);
 
-const Castle = BigHouseMaster.destroyThisCrapAndBuildCastle();
-console.log(Castle);
+const castle = bigHouseMaster.destroyThisCrapAndBuildCastle();
+console.log(castle);
