@@ -1,0 +1,96 @@
+@import "./normalize.css";
+@import "./fonts.css";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page__calendar {
+    width: 41rem;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.page__date {
+    color: coral;
+}
+
+.calendar {
+    margin-top: 2rem;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+.calendar__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calendar__days {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendar__day {
+    font-size: 3rem;
+    border-bottom: 2px solid blue;
+    display: inline-block;
+    height: 3rem;
+}
+
+.calendar__dates {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.calendar__date {
+    font-size: 2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid blue;
+    display: inline-block;
+    width: calc(100%/7);
+    height: 3rem;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.calendar__date:hover {
+    background-color:coral;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    background: inherit;
+    border: none;
+    font-size: 4rem;
+    background-color: #FFF;
+    color: blue;
+    outline: none;
+    transition: all linear .2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: coral;
+}
+
+.calendar__date_prev,
+.calendar__date_next {
+    color: #ccc;
+}
+
+.calendar__date_current {
+    background-color: coral;
+}
