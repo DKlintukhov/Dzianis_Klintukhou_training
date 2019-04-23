@@ -6,77 +6,84 @@ function Component() {
     var _attributeName;
     var _attributeValue;
     var _handler = new Function;
-    var _id;
     var _callback = new Function;
 
-    this.setCallBack = function (callback) {
+    function setCallBack(callback) {
         this._callback = callback;
     }
 
-    this.getCallBack = function () {
+    function getCallBack() {
         return _callback;
     }
 
-    this.setHandler = function (handler) {
+    function setHandler(handler) {
         _handler = handler;
         return this;
     }
 
-    this.setAttributeName = function (name) {
+    function setAttributeName(name) {
         _attributeName = name;
         return this;
     }
 
-    this.setAttributeValue = function (value) {
+    function setAttributeValue(value) {
         _attributeValue = value;
         return this;
     }
 
-    this.setTag = function (tag) {
+    function setTag(tag) {
         _tag = tag;
         return this;
     }
 
-    this.setContent = function (content) {
+    function setContent(content) {
         _content = content || " ";
         return this;
     }
 
-    this.setClassName = function (className) {
+    function setClassName(className) {
         _className = className || " ";
         return this;
     }
 
-    this.setId = function (id) {
-        _id = id || " ";
-        return this;
-    }
-
-    this.getId = function () {
-        return _id;
-    }
-
-    this.getTag = function () {
+    function getTag() {
         return _tag;
     }
 
-    this.getContent = function () {
+    function getContent() {
         return _content;
     }
 
-    this.getClassName = function () {
+    function getClassName() {
         return _className;
     }
 
-    this.getHandler = function () {
+    function getHandler() {
         return _handler();
     }
 
-    this.getAttributeName = function () {
+    function getAttributeName() {
         return _attributeName;
     }
 
-    this.getAttributeValue = function () {
+    function getAttributeValue() {
         return _attributeValue;
+    }
+
+    return {
+        setCallBack: setCallBack,
+        getCallBack: getCallBack,
+        setHandler: setHandler,
+        setAttributeName: setAttributeName,
+        setAttributeValue: setAttributeValue,
+        setTag: setTag,
+        setContent: setContent,
+        setClassName: setClassName,
+        getTag: getTag,
+        getContent: getContent,
+        getClassName: getClassName,
+        getHandler: getHandler,
+        getAttributeName: getAttributeName,
+        getAttributeValue: getAttributeValue
     }
 }

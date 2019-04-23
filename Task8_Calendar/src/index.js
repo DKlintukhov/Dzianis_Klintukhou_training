@@ -1,4 +1,4 @@
-var root = getSelector("#root");
+var root = library.getSelector("#root");
 
 // добавляем все компоненты в DOM
 render.addToHTML(headerNode, "afterBegin", buttonNodeL);
@@ -8,4 +8,4 @@ render.addToHTML(calendarNode, "afterBegin", daysOfWeekNode);
 render.addToHTML(calendarNode, "beforeEnd", datesNode);
 render.addToHTML(calendarNode, "afterBegin", headerNode);
 
-render.addToHTML(root, "AfterBegin", calendarNode)
+render.addToHTML(root, "AfterBegin", calendarNode);

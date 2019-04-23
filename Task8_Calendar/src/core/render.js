@@ -1,23 +1,24 @@
-function Render() { }
+var render = (function () {
+    function addToHTML(parent, position, newElem) {
+        parent.insertAdjacentElement(position, newElem);
+    }
 
-// метод для добавления html node в родитель или в DOM
-Render.prototype.addToHTML = function (parent, position, newElem) {
-    parent.insertAdjacentElement(position, newElem);
-}
+    function createNode(component) {
+        var node = document.createElement(component.getTag());
+        node.innerHTML = component.getContent();
+        node.setAttribute(component.getAttributeName() || "id", component.getAttributeValue() || " ");
+        node.className = component.getClassName();
+        node.addEventListener("click", function (event) {
+            this.event = event;
+            component.getHandler();
+            event.stopPropagation();
+        }, false)
 
-// создания html node
-Render.prototype.createNode = function (component) {
-    var node = document.createElement(component.getTag());
-    node.innerHTML = component.getContent();
-    node.setAttribute(component.getAttributeName() || "id", component.getAttributeValue() || " ");
-    node.className = component.getClassName();
-    node.addEventListener("click", function (event) {
-        this.event = event;
-        component.getHandler();
-        event.stopPropagation();
-    }, false)
-    return node;
-}
+        return node;
+    }
 
-// глобальный обьект render
-var render = new Render();
+    return {
+        addToHTML: addToHTML,
+        createNode: createNode
+    }
+})()

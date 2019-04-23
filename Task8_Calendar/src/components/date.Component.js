@@ -5,7 +5,7 @@ var dateComponent = new Component()
     .setHandler(weatherHandler)
 
 
-getDates(dateModel, dateComponent, datesNode);
+dateModel.getDates(dateModel, dateComponent, datesNode);
 
 function weatherHandler() {
     console.log("get Weather");
