@@ -1,0 +1,19 @@
+.__hide {
+    display: none;
+}
+
+.__bg-spring {
+    background: url('../assets/img/spring.jpg') center;
+}
+
+.__bg-autumn {
+    background: url('../assets/img/autumn.jpg') center;
+}
+
+.__bg-summer {
+    background: url('../assets/img/summer.jpg') center;
+}
+
+.__bg-winter {
+    background: url('../assets/img/winter.jpg') center;
+}
