@@ -1,0 +1,28 @@
+.button {
+    border: none;
+    background: inherit;
+    font-size: 4rem;
+    background-color: #FFF;
+    color: blue;
+    outline: none;
+    transition: all linear .2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: coral;
+}
+
+.button-close {
+    z-index: 99;
+    border: none;  
+    font-size: 2rem;
+    color: #FFF;
+    background: transparent;  
+    transition: all linear .3s;
+}
+
+.button-close:hover {
+    cursor: pointer;
+    color: coral;
+}

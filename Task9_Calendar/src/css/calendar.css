@@ -1,0 +1,29 @@
+.page__calendar {
+    position: relative;
+    width: 41rem;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.page__date {
+    color: coral;
+}
+
+.calendar {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    border: 2px solid blue;
+    border-bottom: none;
+}
+
+.calendar__days {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendar__day {
+    display: inline-block;
+    height: 3rem;
+    font-size: 3rem;
+    border-bottom: 2px solid blue;
+}
