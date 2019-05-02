@@ -17,14 +17,14 @@ module.exports = async (req, res) => {
         },
         json: true
     }
+    
     try {
         const data = await rp(options);
         res.status(200).json({
-            city: data.name,
-            temp: data.main.temp
+            data: data
         })
     } catch (error) {
-        res.status(200).json({
+        res.status(404).json({
             res: error
         })
     }

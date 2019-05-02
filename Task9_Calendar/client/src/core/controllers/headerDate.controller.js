@@ -1,27 +1,13 @@
-var headerDateController = (function() {
-    var _dateModel;
-    var _headerDateView;
-    var _child;
-
+var headerDateController = (function (model, view, child) {
+    var _dateModel = model;
+    var _headerDateView = view;
+    var _child = child;
     var RESET_MONTH = {
         December: 11,
         January: 0
     }
 
-    function setChild(child) {
-        _child = child
-    }
-
-    function setModel(model) {
-        _dateModel = model;
-    }
-
-    function setView(view) {
-        _headerDateView = view;
-    }
-
     function onClickPrevMonth() {
-        
         _dateModel.decrementCurrentMonth();
 
         if (_dateModel.getCurrentMonth() == -1) {
@@ -42,15 +28,15 @@ var headerDateController = (function() {
             _dateModel.setCurrentMonth(RESET_MONTH.January);
             _dateModel.getDayOfWeek(_dateModel.getCurrentMonth());
         }
-        
+
         showHeaderDate();
         _child.showDates();
     }
-    
+
     function showHeaderDate() {
         var headerDateViewModel = {
             tag: "header",
-            style: "header",
+            style: "calendar__header",
             id: "js-headerDate",
             parentId: "js-calendar",
             date: {
@@ -84,9 +70,6 @@ var headerDateController = (function() {
     }
 
     return {
-        setModel: setModel,
-        setView: setView,
-        showHeaderDate: showHeaderDate,
-        setChild: setChild
+        showHeaderDate: showHeaderDate
     }
-})();
+})(dateModel, headerDateView, datesController);

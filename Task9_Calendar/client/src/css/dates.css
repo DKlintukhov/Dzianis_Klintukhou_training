@@ -1,15 +1,21 @@
+.page__date {
+    color: coral;
+}
+
 .calendar__dates {
     position: relative;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
     margin-top: 1rem;
     box-sizing: border-box;
     text-align: left;
 }
 
-.calendar__date {
+.calendar__date_current,
+.calendar__date_next,
+.calendar__date_prev,
+.calendar__date_simple {
     display: inline-block;
     width: calc(100%/7);
     height: 3rem;
@@ -20,7 +26,10 @@
     transition: all linear .3s;
 }
 
-.calendar__date:hover {
+.calendar__date_current:hover,
+.calendar__date_next:hover,
+.calendar__date_prev:hover,
+.calendar__date_simple:hover {
     background-color:coral;
     cursor: pointer;
 }

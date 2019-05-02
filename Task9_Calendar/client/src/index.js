@@ -1,29 +1,26 @@
-var root = document.querySelector("#root");
+window.addEventListener("load", function () {
+    var lastSecondsToTomorrow = lib.getSecondsToTomorrow();
+    
+    calendarController.showCalendar();
+    headerDateController.showHeaderDate();
+    weekController.showWeek();
+    datesController.showDates();
+    weatherDialogBoxController.showWeatherDialogBox();
+    weatherController.showWeatherWithData();
 
-calendarController.setView(calendarView);
-calendarController.showCalendar();
+    setInterval(function() {
+        --lastSecondsToTomorrow;
 
-headerDateController.setModel(dateModel);
-headerDateController.setView(headerDateView);
-headerDateController.showHeaderDate();
-headerDateController.setChild(datesController);
+        if(lastSecondsToTomorrow === 0) {
+            calendarController.showCalendar();
+            headerDateController.showHeaderDate();
+            weekController.showWeek();
+            datesController.showDates();
+            weatherDialogBoxController.showWeatherDialogBox();
+            weatherController.showWeatherWithData();
 
-weekController.setView(weekView);
-weekController.setModel(dateModel);
-weekController.showWeek();
+            lastSecondsToTomorrow = lib.getSecondsToTomorrow();
+        }
+    }, 1000);
 
-datesController.setModel(dateModel);
-datesController.setView(datesView);
-datesController.setChild(weatherDialogBoxController);
-datesController.showDates();
-
-weatherDialogBoxController.setModel(dateModel);
-weatherDialogBoxController.setView(weatherDialogBoxView);
-weatherDialogBoxController.showWeatherDialogBox();
-weatherDialogBoxController.setChild(weatherController);
-
-weatherController.setModel(weatherModel);
-weatherController.setView(weatherView);
-weatherController.showWeatherData();
-
-
+});

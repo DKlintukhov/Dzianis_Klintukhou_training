@@ -1,11 +1,10 @@
 var dateModel = (function () {
-
     var _date = new Date();
     var _currentYear = _date.getFullYear();
     var _currentMonth = _date.getMonth();
     var _currentDate = _date.getDate();
-    var _weekDays = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
     var _dayOfWeek;
+    var _weekDays = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
     var _monthArr = [
         "Январь",
         "Февраль",
@@ -80,49 +79,38 @@ var dateModel = (function () {
 
     // алгоритм для получения дат для всего календаря
     function getDates() {
-
         var DATES = {
             fiveRows: 35,
             sixRows: 42,
             correctWeekDay: 2
         }
-
+        var dates = DATES.fiveRows;
+        var datesArr = [];
         var prevMonthDay = getPreviousMonthLastDay();
         var dayOfWeek = getDayOfWeek();
         var currentMonthLastDay = getCurrentMonthLastDay();
-
         // узеаем до какой позиции заполнять датами предыдущего месяца
         prevMonthDay -= dayOfWeek - DATES.correctWeekDay;
 
-        var dates = DATES.fiveRows;
-
         // проверка на переполнение
         if (currentMonthLastDay + dayOfWeek - 1 > DATES.fiveRows) {
-
             // добавляем ещё 6 ряд
             dates = DATES.sixRows;
         }
 
-        var datesArr = [];
-
         for (let index = 1, i = 1; index <= dates; index++) {
-
             // если index находится на позиции дня недели текущего месяца, то заполняем обыными датами
             if (index >= dayOfWeek) {
-
                 datesArr.push(i);
                 i += 1;
             }
-
             // иначе заполняем датами предыдущего месяца
             else {
                 datesArr.push(prevMonthDay);
                 prevMonthDay++;
             }
-
             // если текущий месяц закончился
             if (i > currentMonthLastDay) {
-
                 // заполняем следуюющим месяцем
                 for (let day = 1; day <= dates - index; day++) {
                     datesArr.push(day);
