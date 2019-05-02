@@ -1,24 +1,12 @@
-var datesController = (function() {
-    var _datesView;
-    var _datesModel;
-    var _child;
+var datesController = (function (view, model, child) {
+    var _datesView = view;
+    var _datesModel = model;
+    var _child = child;
 
-    function setChild(child) {
-        _child = child;
-    }
-
-    function setView(view) {
-        _datesView = view;
-    }
-
-    function setModel(model) {
-        _datesModel = model;
-    }
-    
     function onClickGetWeather(event) {
         _child.onClickGetWeather(event);
     }
-    
+
     function showDates() {
         var datesViewModel = {
             tag: "div",
@@ -36,7 +24,7 @@ var datesController = (function() {
                 func: onClickGetWeather
             },
             date: {
-                style: "calendar__date"
+                style: "calendar__date_simple"
             },
             currentDate: {
                 style: "calendar__date_current"
@@ -53,9 +41,6 @@ var datesController = (function() {
     }
 
     return {
-        setView: setView,
-        setModel: setModel,
-        setChild: setChild,
         showDates: showDates
     }
-})();
+})(datesView, dateModel, weatherDialogBoxController);

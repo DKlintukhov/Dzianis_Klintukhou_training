@@ -21,6 +21,7 @@
     color: #FFF;
     background: transparent;  
     transition: all linear .3s;
+    margin: 2rem;
 }
 
 .button-close:hover {

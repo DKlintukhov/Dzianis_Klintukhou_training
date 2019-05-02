@@ -1,17 +1,12 @@
 .page__calendar {
     position: relative;
-    width: 41rem;
+    width: 50rem;
     height: auto;
-    margin: 2rem auto;
-}
-
-.page__date {
-    color: coral;
+    margin: 3rem auto;
 }
 
 .calendar {
     box-sizing: border-box;
-    margin-top: 2rem;
     border: 2px solid blue;
     border-bottom: none;
 }

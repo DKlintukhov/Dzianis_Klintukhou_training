@@ -1,10 +1,6 @@
-var calendarController = (function() {
-    var _calendarView;
+var calendarController = (function (view) {
+    var _calendarView = view;
 
-    function setView(view) {
-        _calendarView = view;
-    }
-    
     function showCalendar() {
         var calendarViewModel = {
             tag: "div",
@@ -17,7 +13,6 @@ var calendarController = (function() {
     }
 
     return {
-        setView: setView,
         showCalendar: showCalendar,
     }
-})();
+})(calendarView);

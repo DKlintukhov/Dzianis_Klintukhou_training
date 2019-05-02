@@ -6,14 +6,14 @@ var http = (function () {
             _xhr.open('GET', uri);
 
             _xhr.onload = function () {
-                res(_xhr.response);
+                res(JSON.parse(_xhr.response));
             };
 
             _xhr.onerror = function () {
-                rej(_xhr.status)
+                rej("Погода не доступна")
             };
 
-            _xhr.timeout = 5000;
+            _xhr.timeout = 3000;
             _xhr.send(null);
         })
     }

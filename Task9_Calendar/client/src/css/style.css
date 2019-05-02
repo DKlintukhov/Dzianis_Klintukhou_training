@@ -9,5 +9,28 @@
 @import "./mix.css";
 
 body {
+    min-width: 300px;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    html {
+        font-size: 7px;
+    }
+
+    .page__calendar {
+        width: 100%;
+    }
 }

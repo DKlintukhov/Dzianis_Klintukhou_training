@@ -1,15 +1,7 @@
-var weekController = (function() {
-    var _weekView;
-    var _weekModel;
+var weekController = (function (view, model) {
+    var _weekView = view;
+    var _weekModel = model;
 
-    function setView(view) {
-        _weekView = view;
-    }
-
-    function setModel(model) {
-        _weekModel = model;
-    }
-    
     function showWeek() {
         var weekViewModel = {
             tag: "div",
@@ -26,8 +18,6 @@ var weekController = (function() {
     }
 
     return {
-        setView: setView,
-        setModel: setModel,
         showWeek: showWeek
     }
-})();
+})(weekView, dateModel);

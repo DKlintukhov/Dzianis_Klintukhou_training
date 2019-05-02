@@ -1,40 +1,25 @@
-var weatherDialogBoxController = (function () {
-    var _weatherDialogBoxView;
-    var _weatherModel;
-    var _child;
+var weatherDialogBoxController = (function (model, view, weatherController) {
+    var _weatherDialogBoxView = view;
+    var _dateModel = model;
+    var _weatherController = weatherController;
     var isShow = false;
-
-    function setChild(child) {
-        _child = child;
-    }
-
-    function setView(view) {
-        _weatherDialogBoxView = view;
-    }
-
-    function setModel(model) {
-        _weatherModel = model;
-    }
 
     function onClickGetWeather(event) {
         isShow = !isShow;
         var target = event.target;
-        var currentMonth = _weatherModel.getCurrentMonth();
+        var currentMonth = _dateModel.getCurrentMonth();
         var elem = document.getElementById("js-dialogBox");
+        
+        lib.isClassName(target, "calendar__date_next", _dateModel.incrementCurrentMonth);
+        lib.isClassName(target, "calendar__date_prev", _dateModel.decrementCurrentMonth);
 
-        //console.log(event.target.childNodes[0]);
-
-        lib.isClassName(target, "calendar__date_next", _weatherModel.incrementCurrentMonth);
-        lib.isClassName(target, "calendar__date_prev",  _weatherModel.decrementCurrentMonth);
-
-        isShow  ? lib.classToggle(elem, "__hide", "__show")
-                : lib.classToggle(elem, "__show", "__hide");
+        isShow  ?   lib.classToggle(elem, "__hide", "__show")
+                :   lib.classToggle(elem, "__show", "__hide");
 
         showWeatherDialogBox(isShow);
-        _child.showWeatherData();
-        
+        _weatherController.showWeatherWithData();
         // ресет месяца
-        _weatherModel.setCurrentMonth(currentMonth);
+        _dateModel.setCurrentMonth(currentMonth);
     }
 
     function onClickCloseWeather() {
@@ -46,15 +31,15 @@ var weatherDialogBoxController = (function () {
     function showWeatherDialogBox(isShow) {
         var styleWeather;
 
-        isShow  ? styleWeather = "dialog-box calendar__dialog-box __show"
-                : styleWeather = "dialog-box calendar__dialog-box __hide";
+        isShow  ?   styleWeather = "dialog-box calendar__dialog-box __show"
+                :   styleWeather = "dialog-box calendar__dialog-box __hide";
 
         var weatherViewModel = {
             tag: "div",
             style: styleWeather,
             id: "js-dialogBox",
-            parentId: "js-calendar",
-            currentMonth: _weatherModel.getCurrentMonth(),
+            parentId: "root",
+            currentMonth: _dateModel.getCurrentMonth(),
             handler: {
                 event: "click",
                 func: onClickGetWeather
@@ -73,15 +58,12 @@ var weatherDialogBoxController = (function () {
                 }
             }
         }
-        
+
         _weatherDialogBoxView.render(weatherViewModel);
     }
 
     return {
-        setView: setView,
-        setModel: setModel,
-        setChild: setChild,
         onClickGetWeather: onClickGetWeather,
         showWeatherDialogBox: showWeatherDialogBox
     }
-})();
+})(dateModel, weatherDialogBoxView, weatherController);
