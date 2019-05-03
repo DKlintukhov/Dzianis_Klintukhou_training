@@ -10,7 +10,7 @@ var http = (function () {
             };
 
             _xhr.onerror = function () {
-                rej("Погода не доступна")
+                rej(_xhr.response);
             };
 
             _xhr.timeout = 3000;

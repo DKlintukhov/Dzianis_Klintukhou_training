@@ -1,4 +1,4 @@
-var weatherDialogBoxView = (function () {
+var weatherDialogBoxView = (function (controllers) {
 
     function render(weatherViewModel) {
         var node = document.createElement(weatherViewModel.tag);
@@ -10,7 +10,7 @@ var weatherDialogBoxView = (function () {
 
         buttonClose.className = weatherViewModel.buttonClose.style;
         buttonClose.textContent = weatherViewModel.buttonClose.content;
-        buttonClose.addEventListener(weatherViewModel.buttonClose.handler.event, weatherViewModel.buttonClose.handler.func);
+        buttonClose.addEventListener("click", controllers.weatherDialogBoxController.onClickWeather);
 
         lib.isSeason(
             node, currentMonth, 
@@ -28,4 +28,4 @@ var weatherDialogBoxView = (function () {
     return {
         render: render
     }
-})();
+})(controllers);

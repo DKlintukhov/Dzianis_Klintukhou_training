@@ -1,4 +1,4 @@
-var datesView = (function () {
+var datesView = (function (controllers) {
 
     function render(datesViewModel) {
         var node = document.createElement(datesViewModel.tag);
@@ -7,7 +7,6 @@ var datesView = (function () {
         node.id = datesViewModel.id;
 
         for (let index = 0, i = 1; index < datesViewModel.content.length; index++) {
-
             var date = document.createElement(datesViewModel.tag);
             var isCurrentDate = lib.isCurrentDate(datesViewModel.currentDay, datesViewModel.currentMonth, datesViewModel.currentYear);
             
@@ -30,16 +29,15 @@ var datesView = (function () {
 
             date.textContent = datesViewModel.content[index];
             node.appendChild(date);
-            node.addEventListener(datesViewModel.handler.event, datesViewModel.handler.func)
         }
 
         lib.isElemInDom(document.getElementById(datesViewModel.id), document.getElementById(datesViewModel.parentId));
         lib.addToParent(datesViewModel.parentId, node, "beforeEnd");
 
-        node.addEventListener(datesViewModel.handler.event, datesViewModel.handler.func);
+        node.addEventListener("click", controllers.weatherDialogBoxController.onClickWeather);
     }
 
     return {
         render: render
     }
-})();
+})(controllers);
