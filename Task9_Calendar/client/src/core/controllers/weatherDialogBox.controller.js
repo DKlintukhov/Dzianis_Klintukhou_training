@@ -1,4 +1,4 @@
-var weatherDialogBoxController = (function (model, view) {
+var weatherDialogBoxController = (function (model, view, controllers) {
     var _weatherDialogBoxView = view;
     var _weatherDialogBoxModel = model;
     var _isShow = false;
@@ -19,7 +19,8 @@ var weatherDialogBoxController = (function (model, view) {
         onClickWeather: onClickWeather,
         showWeatherDialogBox: showWeatherDialogBox
     }
-})(weatherDialogBoxModel, weatherDialogBoxView);
+})(weatherDialogBoxModel, weatherDialogBoxView, controllersObserver._getControllers);
 
 
-controllers.weatherDialogBoxController = weatherDialogBoxController;
+controllersObserver._getControllers.weatherDialogBoxController = weatherDialogBoxController;
+controllersObserver.add(weatherDialogBoxController.showWeatherDialogBox);

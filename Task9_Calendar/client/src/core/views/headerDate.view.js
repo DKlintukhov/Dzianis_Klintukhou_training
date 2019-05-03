@@ -33,4 +33,4 @@ var headerDateView = (function (controllers) {
     return {
         render: render
     }
-})(controllers);
+})(controllersObserver._getControllers);

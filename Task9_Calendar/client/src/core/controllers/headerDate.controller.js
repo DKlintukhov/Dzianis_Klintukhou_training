@@ -1,16 +1,17 @@
 var headerDateController = (function (view, model, controllers) {
     var _headerDateView = view;
     var _headerModel = model;
+    var _controllers = controllers;
 
     function onClickPrevMonth() {
         _headerModel.onClickPrevMonth();
-        controllers.datesController.showDates();
+        _controllers.datesController.showDates();
         _headerDateView.render(_headerModel.getViewModel());
     }
 
     function onClickNextMonth() {
         _headerModel.onClickNextMonth();
-        controllers.datesController.showDates();
+        _controllers.datesController.showDates();
         _headerDateView.render(_headerModel.getViewModel());
     }
 
@@ -23,6 +24,7 @@ var headerDateController = (function (view, model, controllers) {
         onClickNextMonth: onClickNextMonth,
         showHeaderDate: showHeaderDate
     }
-})(headerDateView, headerDateModel, controllers);
+})(headerDateView, headerDateModel, controllersObserver._getControllers);
 
-controllers.headerDateController = headerDateController
+controllersObserver._getControllers.headerDateController = headerDateController;
+controllersObserver.add(headerDateController.showHeaderDate);

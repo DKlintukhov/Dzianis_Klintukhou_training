@@ -3,7 +3,7 @@ var rejWeatherController = (function (rejView, model, weatherData) {
     var _rejWeatherModel = model;
     var _weatherData = weatherData;
 
-    function showRejWeather(data) {
+    function showRejWeather() {
         _rejWeatherView.render(_rejWeatherModel.getViewModel());
     }
 
@@ -16,4 +16,4 @@ var rejWeatherController = (function (rejView, model, weatherData) {
     }
 })(rejWeatherView, rejWeatherModel, weatherData);
 
-controllers.rejWeatherController = rejWeatherController;
+controllersObserver._getControllers.rejWeatherController = rejWeatherController;

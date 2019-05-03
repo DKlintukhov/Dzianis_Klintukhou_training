@@ -28,4 +28,4 @@ var weatherDialogBoxView = (function (controllers) {
     return {
         render: render
     }
-})(controllers);
+})(controllersObserver._getControllers);
