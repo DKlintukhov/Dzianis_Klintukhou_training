@@ -1,5 +1,5 @@
 var datesModel = (function (dateData) {
-    var _dataModel = dateData;
+    var _dateData = dateData;
     
     // алгоритм для получения дат для всего календаря
     function getDates() {
@@ -10,9 +10,9 @@ var datesModel = (function (dateData) {
         }
         var dates = DATES.fiveRows;
         var datesArr = [];
-        var prevMonthDay = _dataModel.getPreviousMonthLastDay();
-        var dayOfWeek = _dataModel.getDayOfWeek();
-        var currentMonthLastDay = _dataModel.getCurrentMonthLastDay();
+        var prevMonthDay = _dateData.getPreviousMonthLastDay();
+        var dayOfWeek = _dateData.getDayOfWeek();
+        var currentMonthLastDay = _dateData.getCurrentMonthLastDay();
         // узеаем до какой позиции заполнять датами предыдущего месяца
         prevMonthDay -= dayOfWeek - DATES.correctWeekDay;
 
@@ -52,12 +52,12 @@ var datesModel = (function (dateData) {
             style: "calendar__dates",
             id: "js-dates",
             parentId: "js-calendar",
-            dateOfWeek: _dataModel.getDayOfWeek(),
+            dateOfWeek: _dateData.getDayOfWeek(),
             content: getDates(),
-            currentMonthLastDay: _dataModel.getCurrentMonthLastDay(_dataModel.getCurrentYear, _dataModel.getCurrentMonth()),
-            currentDay: _dataModel.getCurrentDate(),
-            currentMonth: _dataModel.getCurrentMonth(),
-            currentYear: _dataModel.getCurrentYear(),
+            currentMonthLastDay: _dateData.getCurrentMonthLastDay(_dateData.getCurrentYear, _dateData.getCurrentMonth()),
+            currentDay: _dateData.getCurrentDate(),
+            currentMonth: _dateData.getCurrentMonth(),
+            currentYear: _dateData.getCurrentYear(),
             date: {
                 style: "calendar__date_simple"
             },
@@ -78,4 +78,4 @@ var datesModel = (function (dateData) {
     return {
         getViewModel: getViewModel
     }
-})(dateData, controllers);
+})(dateData, controllersObserver._getControllers);

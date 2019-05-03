@@ -40,4 +40,4 @@ var datesView = (function (controllers) {
     return {
         render: render
     }
-})(controllers);
+})(controllersObserver._getControllers);

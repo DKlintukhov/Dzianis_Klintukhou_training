@@ -34,3 +34,49 @@ body {
         width: 100%;
     }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .page__calendar {
+        position: relative;
+        width: 45rem;
+        height: auto;
+        margin: 3rem auto;
+    }
+    
+    .calendar__date_current,
+    .calendar__date_next,
+    .calendar__date_prev,
+    .calendar__date_simple {
+        display: inline-block;
+        width: 6.37rem;
+        height: 3rem;
+        font-size: 2rem;
+        padding: 1rem 0;
+        border-bottom: 2px solid blue;
+        text-align: center;
+        transition: all linear .3s;
+    }
+
+    @media screen and (max-width: 535px) {
+        .page__calendar {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 3rem auto;
+        }
+
+        .calendar__date_current,
+        .calendar__date_next,
+        .calendar__date_prev,
+        .calendar__date_simple {
+            display: inline-block;
+            width: 5rem;
+            height: 3rem;
+            font-size: 2rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid blue;
+            text-align: center;
+            transition: all linear .3s;
+        }
+    }
+}

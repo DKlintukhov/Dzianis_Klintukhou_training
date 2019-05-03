@@ -1,23 +1,18 @@
 window.addEventListener("load", function () {
     var lastSecondsToTomorrow = lib.getSecondsToTomorrow();
-    
     calendarController.showCalendar();
-    headerDateController.showHeaderDate();
     weekController.showWeek();
-    datesController.showDates();
-    weatherDialogBoxController.showWeatherDialogBox();
-    weatherController.showWeatherWithData();
+
+    controllersObserver.update();
 
     setInterval(function() {
         --lastSecondsToTomorrow;
 
         if(lastSecondsToTomorrow === 0) {
             calendarController.showCalendar();
-            headerDateController.showHeaderDate();
             weekController.showWeek();
-            datesController.showDates();
-            weatherDialogBoxController.showWeatherDialogBox();
-            weatherController.showWeatherWithData();
+        
+            controllersObserver.update();
 
             lastSecondsToTomorrow = lib.getSecondsToTomorrow();
         }
