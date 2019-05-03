@@ -1,25 +1,19 @@
-var rejWeatherController = (function (rejView, model) {
+var rejWeatherController = (function (rejView, model, weatherData) {
     var _rejWeatherView = rejView;
-    var _weatherModel = model;
+    var _rejWeatherModel = model;
+    var _weatherData = weatherData;
 
     function showRejWeather(data) {
-        console.log(data);
-        var weatherViewModel = {
-            tag: "div",
-            id: "js-weather",
-            parentId: "js-dialogBox",
-            style: "weather",
-            content: "Погода не доступна",
-        }
-
-        _rejWeatherView.render(weatherViewModel);
+        _rejWeatherView.render(_rejWeatherModel.getViewModel());
     }
 
     function showWeatherWithData() {
-        _weatherModel.getWeatherData(showRejWeather, showRejWeather);
+        _weatherData.getWeatherData(showRejWeather, showRejWeather);
     }
 
     return {
         showWeatherWithData: showWeatherWithData
     }
-})(rejWeatherView, weatherModel);
+})(rejWeatherView, rejWeatherModel, weatherData);
+
+controllers.rejWeatherController = rejWeatherController;

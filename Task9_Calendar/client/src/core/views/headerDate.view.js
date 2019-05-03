@@ -1,11 +1,10 @@
-var headerDateView = (function () {
-
+var headerDateView = (function (controllers) {
+ 
     function render(headerDateViewModel) {
         var node = document.createElement(headerDateViewModel.tag);
         var buttonPrev = document.createElement(headerDateViewModel.buttonPrev.tag);
         var buttonNext = document.createElement(headerDateViewModel.buttonNext.tag);
         var date = document.createElement(headerDateViewModel.date.tag);
-
         date.className = headerDateViewModel.date.style;
         date.textContent = headerDateViewModel.date.content;
 
@@ -27,11 +26,11 @@ var headerDateView = (function () {
         lib.isElemInDom(document.getElementById(headerDateViewModel.id), document.getElementById(headerDateViewModel.parentId));
         lib.addToParent(headerDateViewModel.parentId, node, "afterBegin");
 
-        buttonPrev.addEventListener(headerDateViewModel.buttonPrev.handler.event, headerDateViewModel.buttonPrev.handler.func);
-        buttonNext.addEventListener(headerDateViewModel.buttonNext.handler.event, headerDateViewModel.buttonNext.handler.func);
+        buttonPrev.addEventListener("click", controllers.headerDateController.onClickPrevMonth);
+        buttonNext.addEventListener("click", controllers.headerDateController.onClickNextMonth);
     }
 
     return {
         render: render
     }
-})();
+})(controllers);

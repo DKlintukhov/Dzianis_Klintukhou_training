@@ -22,5 +22,4 @@ window.addEventListener("load", function () {
             lastSecondsToTomorrow = lib.getSecondsToTomorrow();
         }
     }, 1000);
-
 });

@@ -1,29 +1,39 @@
-var weatherModel = (function (service) {
-    var _http = service;
-    var uri = 'http://localhost:4444/api/weather';
+var weatherModel = (function () {
 
-    function getWeatherData(res, rej) {
-        _http.get(uri)
-            .then(function (data) {
-                var weatherData = {
-                    city: data.data.name,
-                    // перевод из f в c
-                    temp: Math.floor((data.data.main.temp - 32) / 1.8),
-                    desc: data.data.weather[0].description,
-                    // перевод из миль в км
-                    wind: Math.floor(data.data.wind.speed * 1.609)
+    function getViewModel(data) {
+        var weatherViewModel = {
+            tag: "div",
+            id: "js-weather",
+            parentId: "js-dialogBox",
+            style: "weather",
+            content: {
+                city: {
+                    tag: "h3",
+                    style: "weather",
+                    content: "Город: Могилев"
+                },
+                wind: {
+                    tag: "h3",
+                    style: "weather",
+                    content: "Ветер: " + data.wind + " км/ч"
+                },
+                temp: {
+                    tag: "h3",
+                    style: "weather",
+                    content: "Температура: " + data.temp + " \u2103"
+                },
+                desc: {
+                    tag: "h3",
+                    style: "weather",
+                    content: data.desc
                 }
+            }
+        }
 
-                res(weatherData);
-            })
-            .catch(function (error) {
-                if (rej) {
-                    rej(error);
-                }
-            });
+        return weatherViewModel;
     }
 
     return {
-        getWeatherData: getWeatherData,
+        getViewModel: getViewModel
     }
-})(http);
+})();

@@ -1,18 +1,13 @@
-var calendarController = (function (view) {
+var calendarController = (function (view, model) {
     var _calendarView = view;
+    var _calendarModel = model;
 
     function showCalendar() {
-        var calendarViewModel = {
-            tag: "div",
-            style: "calendar page__calendar",
-            id: "js-calendar",
-            parentId: "root"
-        }
-
-        _calendarView.render(calendarViewModel);
+        _calendarView.render(_calendarModel.getViewModel());
     }
 
     return {
         showCalendar: showCalendar,
     }
-})(calendarView);
+    
+})(calendarView, calendarModel);
