@@ -1,6 +1,5 @@
 var datesModel = (function (dateData) {
     var _dateData = dateData;
-    
     // алгоритм для получения дат для всего календаря
     function getDates() {
         var DATES = {
@@ -15,7 +14,6 @@ var datesModel = (function (dateData) {
         var currentMonthLastDay = _dateData.getCurrentMonthLastDay();
         // узеаем до какой позиции заполнять датами предыдущего месяца
         prevMonthDay -= dayOfWeek - DATES.correctWeekDay;
-
         // проверка на переполнение
         if (currentMonthLastDay + dayOfWeek - 1 > DATES.fiveRows) {
             // добавляем ещё 6 ряд

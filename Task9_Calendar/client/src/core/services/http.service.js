@@ -4,9 +4,10 @@ var http = (function () {
         return new Promise(function (res, rej) {
             var _xhr = new XMLHttpRequest();
             _xhr.open('GET', uri);
-
-            _xhr.onload = function () {
-                res(JSON.parse(_xhr.response));
+            _xhr.responseType = "json";
+            
+            _xhr.onload = function() {
+                res(_xhr.response);
             };
 
             _xhr.onerror = function () {
