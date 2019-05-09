@@ -1,5 +1,12 @@
 var datesView = (function (controllers) {
 
+    function isCurrentDate(date, month, year) {
+        var _date = new Date();
+        return _date.getDate() === date
+            && _date.getMonth() === month
+            && _date.getFullYear() === year
+    }
+
     function render(datesViewModel) {
         var node = document.createElement(datesViewModel.tag);
         
@@ -8,7 +15,7 @@ var datesView = (function (controllers) {
 
         for (let index = 0, i = 1; index < datesViewModel.content.length; index++) {
             var date = document.createElement(datesViewModel.tag);
-            var isCurrentDate = lib.isCurrentDate(datesViewModel.currentDay, datesViewModel.currentMonth, datesViewModel.currentYear);
+            var currentDate = isCurrentDate(datesViewModel.currentDay, datesViewModel.currentMonth, datesViewModel.currentYear);
             
             if (index + 1 < datesViewModel.dateOfWeek) {
                 date.className = datesViewModel.date.style;
@@ -18,7 +25,7 @@ var datesView = (function (controllers) {
                 date.className = datesViewModel.date.style;
                 date.classList.add(datesViewModel.nextDate.style);
 
-            } else if (i === datesViewModel.currentDay && isCurrentDate) {
+            } else if (i === datesViewModel.currentDay && currentDate) {
                 date.classList.add(datesViewModel.currentDate.style);
                 i++;
 
@@ -31,8 +38,8 @@ var datesView = (function (controllers) {
             node.appendChild(date);
         }
 
-        lib.isElemInDom(document.getElementById(datesViewModel.id), document.getElementById(datesViewModel.parentId));
-        lib.addToParent(datesViewModel.parentId, node, "beforeEnd");
+        libDOM.isElemInDom(document.getElementById(datesViewModel.id), document.getElementById(datesViewModel.parentId));
+        libDOM.addToParent(datesViewModel.parentId, node, "beforeEnd");
 
         node.addEventListener("click", controllers.weatherDialogBoxController.onClickWeather);
     }

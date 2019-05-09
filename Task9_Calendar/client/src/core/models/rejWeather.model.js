@@ -1,6 +1,6 @@
 var rejWeatherModel = (function () {
     
-    function getViewModel(data) {
+    function getViewModel() {
         var rejWeatherViewModel = {
             tag: "div",
             id: "js-weather",

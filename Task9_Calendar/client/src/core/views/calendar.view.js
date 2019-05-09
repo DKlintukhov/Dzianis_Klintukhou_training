@@ -5,8 +5,8 @@ var calendarView = (function () {
         node.className = calendarViewModel.style;
         node.id = calendarViewModel.id;
 
-        lib.isElemInDom(document.getElementById(calendarViewModel.id), document.getElementById(calendarViewModel.parentId));
-        lib.addToParent(calendarViewModel.parentId, node, "afterBegin");
+        libDOM.isElemInDom(document.getElementById(calendarViewModel.id), document.getElementById(calendarViewModel.parentId));
+        libDOM.addToParent(calendarViewModel.parentId, node, "afterBegin");
     }
 
     return {

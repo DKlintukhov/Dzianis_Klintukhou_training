@@ -1,5 +1,13 @@
 window.addEventListener("load", function () {
-    var lastSecondsToTomorrow = lib.getSecondsToTomorrow();
+
+    function getSecondsToTomorrow() {
+        var now = new Date();
+        var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+        var diff = tomorrow - now;
+        return Math.round(diff / 1000);
+    }
+
+    var lastSecondsToTomorrow = getSecondsToTomorrow();
     calendarController.showCalendar();
     weekController.showWeek();
 
@@ -14,7 +22,7 @@ window.addEventListener("load", function () {
         
             controllersObserver.update();
 
-            lastSecondsToTomorrow = lib.getSecondsToTomorrow();
+            lastSecondsToTomorrow = getSecondsToTomorrow();
         }
     }, 1000);
 });

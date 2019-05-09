@@ -7,8 +7,8 @@ var rejWeatherView = (function () {
         node.textContent = weatherViewModel.content;
         node.id = weatherViewModel.id; 
 
-        lib.isElemInDom(document.getElementById(weatherViewModel.id), document.getElementById(weatherViewModel.parentId));
-        lib.addToParent(weatherViewModel.parentId, node, "beforeEnd");
+        libDOM.isElemInDom(document.getElementById(weatherViewModel.id), document.getElementById(weatherViewModel.parentId));
+        libDOM.addToParent(weatherViewModel.parentId, node, "beforeEnd");
     }
 
     return {

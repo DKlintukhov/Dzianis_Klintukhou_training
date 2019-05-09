@@ -24,8 +24,8 @@ var weatherView = (function () {
         node.appendChild(wind);
         node.appendChild(desc);
 
-        lib.isElemInDom(document.getElementById(weatherViewModel.id), document.getElementById(weatherViewModel.parentId));
-        lib.addToParent(weatherViewModel.parentId, node, "beforeEnd");
+        libDOM.isElemInDom(document.getElementById(weatherViewModel.id), document.getElementById(weatherViewModel.parentId));
+        libDOM.addToParent(weatherViewModel.parentId, node, "beforeEnd");
     }
 
     return {

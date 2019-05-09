@@ -23,8 +23,8 @@ var headerDateView = (function (controllers) {
 
         node.appendChild(buttonNext);
 
-        lib.isElemInDom(document.getElementById(headerDateViewModel.id), document.getElementById(headerDateViewModel.parentId));
-        lib.addToParent(headerDateViewModel.parentId, node, "afterBegin");
+        libDOM.isElemInDom(document.getElementById(headerDateViewModel.id), document.getElementById(headerDateViewModel.parentId));
+        libDOM.addToParent(headerDateViewModel.parentId, node, "afterBegin");
 
         buttonPrev.addEventListener("click", controllers.headerDateController.onClickPrevMonth);
         buttonNext.addEventListener("click", controllers.headerDateController.onClickNextMonth);

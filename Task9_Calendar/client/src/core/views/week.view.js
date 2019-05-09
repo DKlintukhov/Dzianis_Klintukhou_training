@@ -12,7 +12,7 @@ var weekView = (function () {
             node.appendChild(day);
         }
 
-        lib.addToParent(weekViewModel.parentId, node, "beforeEnd");
+        libDOM.addToParent(weekViewModel.parentId, node, "beforeEnd");
     }
 
     return {
