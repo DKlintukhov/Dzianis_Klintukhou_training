@@ -1,0 +1,20 @@
+{
+  "name": "epam_training_calendar",
+  "version": "1.0.0",
+  "description": "full-stack_project_calendar",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "Dzianis Klintukhou",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}

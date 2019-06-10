@@ -1,0 +1,82 @@
+@import "./normalize.css";
+/* @import "./fonts.css"; */
+@import "./calendar.css";
+@import "./header.css";
+@import "./button.css";
+@import "./dialog-box.css";
+@import "./dates.css";
+@import "./weather.css";
+@import "./mix.css";
+
+body {
+    min-width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    html {
+        font-size: 7px;
+    }
+
+    .page__calendar {
+        width: 100%;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .page__calendar {
+        position: relative;
+        width: 45rem;
+        height: auto;
+        margin: 3rem auto;
+    }
+    
+    .calendar__date_current,
+    .calendar__date_next,
+    .calendar__date_prev,
+    .calendar__date_simple {
+        display: inline-block;
+        width: 6.37rem;
+        height: 3rem;
+        font-size: 2rem;
+        padding: 1rem 0;
+        border-bottom: 2px solid blue;
+        text-align: center;
+        transition: all linear .3s;
+    }
+
+    @media screen and (max-width: 535px) {
+        .page__calendar {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 3rem auto;
+        }
+
+        .calendar__date_current,
+        .calendar__date_next,
+        .calendar__date_prev,
+        .calendar__date_simple {
+            display: inline-block;
+            width: 5rem;
+            height: 3rem;
+            font-size: 2rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid blue;
+            text-align: center;
+            transition: all linear .3s;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.__hide {
+    display: none;
+}
+
+.__show {
+    display: block;
+}
+
+.__bg-spring {
+    background: url('../assets/img/spring.gif') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.__bg-autumn {
+    background: url('../assets/img/autumn.gif') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.__bg-summer {
+    background: url('../assets/img/summer.gif') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.__bg-winter {
+    background: url('../assets/img/winter.gif') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

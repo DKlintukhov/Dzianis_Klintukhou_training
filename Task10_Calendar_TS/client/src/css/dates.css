@@ -1,0 +1,44 @@
+.page__date {
+    color: coral;
+}
+
+.calendar__dates {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.calendar__date_current,
+.calendar__date_next,
+.calendar__date_prev,
+.calendar__date_simple {
+    display: inline-block;
+    width: calc(100%/7);
+    height: 3rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid blue;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.calendar__date_current:hover,
+.calendar__date_next:hover,
+.calendar__date_prev:hover,
+.calendar__date_simple:hover {
+    background-color:coral;
+    cursor: pointer;
+}
+
+.calendar__date_prev,
+.calendar__date_next {
+    color: #ccc;
+}
+
+.calendar__date_current {
+    background-color: coral;
+}
