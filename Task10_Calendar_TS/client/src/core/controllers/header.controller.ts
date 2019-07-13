@@ -9,14 +9,13 @@ export interface IHeaderController {
 }
 
 class HeaderController implements IHeaderController {
+    private _headerModel: IHeaderModel;
+    private _headerView: IHeaderView;
 
     constructor(view: IHeaderView, model: IHeaderModel) {
         this._headerModel = model;
         this._headerView = view;
     }
-
-    private _headerModel: IHeaderModel;
-    private _headerView: IHeaderView;
 
     onClickPrevMonth(): void {
         this._headerModel.onClickPrevMonth();

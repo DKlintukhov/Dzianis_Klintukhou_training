@@ -1,14 +1,16 @@
-import getRender, {IRender} from "../renderDom";
+import render, {IRender} from "../renderDom";
 
 export default interface ICalendarView {
     render(calendarViewModel: any): void;
 }
 
 class CalendarView implements ICalendarView{
+    private _render: IRender;
+    
     constructor(render: IRender) {
         this._render = render;
     }
-    private _render: IRender;
+    
     render(calendarViewModel: any): void {
         const node = document.createElement(calendarViewModel.tag);
         node.className = calendarViewModel.style;
@@ -20,4 +22,4 @@ class CalendarView implements ICalendarView{
     }
 }
 
-export const getCalendarView = () => new CalendarView(getRender);
+export const getCalendarView = () => new CalendarView(render);

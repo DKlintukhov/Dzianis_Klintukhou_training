@@ -1,7 +1,7 @@
 import getDateData, {IDateData} from '../store/date.data';
 
 export default interface IDatesModel {
-    getViewModel(): any;
+    getViewModel(): InputOptions;
 }
 
 type date = {
@@ -38,11 +38,11 @@ type InputOptions = {
 }
 
 class DatesModel implements IDatesModel {
+    private _dateData: IDateData;
+
     constructor(data: IDateData) {
         this._dateData = data;
     }
-
-    private _dateData: IDateData;
 
     private getDates(): number[] {
         enum DATES  {

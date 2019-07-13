@@ -1,4 +1,4 @@
-import getRender, {IRender} from "../renderDom";
+import render, {IRender} from "../renderDom";
 import getHeaderController from "../controllers/header.controller";
 
 export default interface IHeaderView {
@@ -6,11 +6,12 @@ export default interface IHeaderView {
 }
 
 class HeaderView implements IHeaderView {
+    private _render: IRender;
+    
     constructor(render: IRender) {
         this._render = render;
     }
-    private _render: IRender;
-
+    
     render(viewModel: any): void {
         const node = document.createElement(viewModel.tag);
         const buttonPrev = document.createElement(viewModel.buttonPrev.tag);
@@ -42,4 +43,4 @@ class HeaderView implements IHeaderView {
     }
 }
 
-export const getHeaderView = () => new HeaderView(getRender);
+export const getHeaderView = () => new HeaderView(render);

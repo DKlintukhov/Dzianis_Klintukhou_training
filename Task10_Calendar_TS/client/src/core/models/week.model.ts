@@ -1,7 +1,7 @@
 import getDateData, {IDateData} from '../store/date.data';
 
 export interface IWeekModel {
-    getViewModel(): any;
+    getViewModel(): InputOptions;
 }
 
 type day = {
@@ -18,11 +18,11 @@ type InputOptions = {
 }
 
 class WeekModel implements IWeekModel {
+    private _dateData: IDateData;
+
     constructor(data: IDateData) {
         this._dateData = data;
     }
-
-    private _dateData: IDateData;
 
     getViewModel(): InputOptions {
         return {

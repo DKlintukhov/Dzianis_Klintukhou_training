@@ -6,13 +6,13 @@ export interface IDatesController {
 }
 
 class DatesController implements IDatesController {
+    private _datesModel: IDatesModel;
+    private _datesView: IDatesView;
+
     constructor(view: IDatesView, model: IDatesModel) {
         this._datesModel = model;
         this._datesView = view;
     }
-
-    private _datesModel: IDatesModel;
-    private _datesView: IDatesView;
 
     showDates(): void {
         this._datesView.render(this._datesModel.getViewModel());

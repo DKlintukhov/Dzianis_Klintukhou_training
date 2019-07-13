@@ -1,15 +1,15 @@
-import getRender, {IRender} from "../renderDom";
+import render, {IRender} from "../renderDom";
 
 export interface IWeekView {
     render(WeekViewModel: any): void;
 }
 
 class WeekView implements IWeekView{
+    private _render: IRender;
+
     constructor(render: IRender) {
         this._render = render;
     }
-
-    private _render: IRender;
 
     render(weekViewModel: any): void {
         const node = document.createElement(weekViewModel.tag);
@@ -27,5 +27,5 @@ class WeekView implements IWeekView{
     }
 }
 
-const getWeekView = new WeekView(getRender);
+const getWeekView = new WeekView(render);
 export default getWeekView;

@@ -1,15 +1,15 @@
-import getRender, {IRender} from "../renderDom";
+import render, {IRender} from "../renderDom";
 
 export default interface IDatesView {
     render(viewModelL: any): void;
 }
 
 class DatesView implements IDatesView {
+    private _render: IRender;
+
     constructor(render: IRender) {
         this._render = render;
     }
-
-    private _render: IRender;
 
     private isCurrentDate(date: number, month: number, year: number): boolean {
         const _date = new Date();
@@ -54,4 +54,4 @@ class DatesView implements IDatesView {
     }
 }
 
-export const getDatesView = () => new DatesView(getRender);
+export const getDatesView = () => new DatesView(render);

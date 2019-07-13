@@ -24,5 +24,5 @@ class Render implements IRender {
     }
 }
 
-const getRender = new Render();
-export default getRender;
+const render = new Render();
+export default render;

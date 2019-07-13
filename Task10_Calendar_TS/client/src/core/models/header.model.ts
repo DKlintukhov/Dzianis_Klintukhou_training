@@ -3,7 +3,7 @@ import getDateData, { IDateData } from '../store/date.data';
 export default interface IHeaderModel {
     onClickPrevMonth(): void;
     onClickNextMonth(): void;
-    getViewModel(): any;
+    getViewModel(): InputOptions;
 }
 
 type date = {
@@ -37,13 +37,13 @@ type InputOptions = {
 }
 
 class HeaderModel implements IHeaderModel {
-    constructor(data: IDateData) {
-        this._dateData = data;
-    }
-
     private _dateData: IDateData;
     private readonly _December = 11;
     private readonly _January = 0;
+    
+    constructor(data: IDateData) {
+        this._dateData = data;
+    }
 
     onClickPrevMonth(): void {
         this._dateData.decrementCurrentMonth();

@@ -1,5 +1,5 @@
 export default interface ICalendarModel {
-    getViewModel(): any;
+    getViewModel(): InputOptions;
 }
 
 type InputOptions = {
