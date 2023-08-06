@@ -1,1 +1,1 @@
-# Epam Front end training tasks.
+### EPAM Front-End course
